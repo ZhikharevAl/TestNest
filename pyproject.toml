@@ -1,9 +1,65 @@
-[project]
-# Support Python 3.10+.
-requires-python = ">=3.10"
-
+# pyproject.toml
 [tool.ruff]
+# Общие настройки
 line-length = 88
+target-version = "py312"
 
+# Настройки форматирования
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+# Настройки линтера
 [tool.ruff.lint]
-select = ["E", "W", "F"]
+select = ["ALL"]
+ignore = [
+    "D203",  # one-blank-line-before-class
+    "D212",  # multi-line-summary-first-line
+    "D100",  # missing-docstring-in-public-module
+    "S101",  # assert
+    "PLR2004", # magic-value-comparison
+    "COM812", # missing-trailing-comma
+    "ISC001", # single-line-implicit-string-concatenation
+    "N812", # Lowercase `expected_conditions` imported as non-lowercase
+]
+fixable = ["ALL"]
+unfixable = []
+
+# Настройки сложности
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+# Настройки docstrings
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+# Игнорирование правил для конкретных файлов
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+"tests/**/*.py" = ["S101"]  # Разрешить использование assert в тестах
+
+# Настройки импортов
+[tool.ruff.lint.isort]
+known-third-party = ["pytest", "selenium"]
+
+# Настройки Pylint
+[tool.ruff.lint.pylint]
+max-args = 5
+max-returns = 3
+max-statements = 50
+max-branches = 12
+
+# Настройки стиля pytest
+[tool.ruff.lint.flake8-pytest-style]
+fixture-parentheses = false
+mark-parentheses = false
+
+# Настройки Bugbear
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["pytest.mark.parametrize"]
+
+# Настройки именования
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = ["classmethod", "pytest.fixture"]
