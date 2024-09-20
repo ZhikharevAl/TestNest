@@ -1,7 +1,7 @@
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from typing import Tuple
+from selenium.webdriver.support.ui import WebDriverWait
 
 from pages.base_page import BasePage
 
@@ -13,12 +13,12 @@ class AddCustomerPage(BasePage):
     EXPECTED_TITLE = "XYZ Bank"
 
     # Locators
-    FIRST_NAME_INPUT: Tuple[str, str] = (By.XPATH, '//input[@ng-model="fName"]')
-    LAST_NAME_INPUT: Tuple[str, str] = (By.XPATH, '//input[@ng-model="lName"]')
-    POST_CODE_INPUT: Tuple[str, str] = (By.XPATH, '//input[@ng-model="postCd"]')
-    ADD_CUSTOMER_BUTTON: Tuple[str, str] = (By.XPATH, '//button[@type="submit"]')
+    FIRST_NAME_INPUT: tuple[str, str] = (By.XPATH, '//input[@ng-model="fName"]')
+    LAST_NAME_INPUT: tuple[str, str] = (By.XPATH, '//input[@ng-model="lName"]')
+    POST_CODE_INPUT: tuple[str, str] = (By.XPATH, '//input[@ng-model="postCd"]')
+    ADD_CUSTOMER_BUTTON: tuple[str, str] = (By.XPATH, '//button[@type="submit"]')
 
-    def __init__(self, browser):
+    def __init__(self, browser: WebDriver) -> None:
         """Initialize the AddCustomerPage.
 
         Args:

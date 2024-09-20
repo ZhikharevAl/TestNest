@@ -1,8 +1,8 @@
 from statistics import mean
 
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-from typing import List, Tuple
 
 from pages.base_page import BasePage
 
@@ -14,17 +14,19 @@ class CustomerListPage(BasePage):
     EXPECTED_TITLE = "XYZ Bank"
 
     # Locators
-    FIRST_NAME_HEADER: Tuple[str, str] = (
+    FIRST_NAME_HEADER: tuple[str, str] = (
         By.XPATH,
         "//a[contains(@ng-click, \"'fName';\")]",
     )
 
-    CUSTOMER_ROWS: Tuple[str, str] = (By.XPATH, "//tbody/tr")
-    DELETE_BUTTON: Tuple[str, str] = (By.XPATH, "//*[text() = 'Delete']")
-    SEARCH_CUSTOMER_INPUT: Tuple[str, str] = (By.XPATH, "//input[@type='text']")
+    CUSTOMER_ROWS: tuple[str, str] = (By.XPATH, "//tbody/tr")
+    DELETE_BUTTON: tuple[str, str] = (By.XPATH, "//*[text() = 'Delete']")
+    SEARCH_CUSTOMER_INPUT: tuple[str, str] = (By.XPATH, "//input[@type='text']")
 
-    def __init__(self, browser):
-        """Initialize the CustomerListPage.
+    def __init__(self, browser: WebDriver) -> None:
+        """
+
+        Initialize the CustomerListPage.
 
         Args:
             browser: WebDriver instance
@@ -45,24 +47,24 @@ class CustomerListPage(BasePage):
             bool: True if the page is loaded, False otherwise
         """
         return self.get_title() == self.EXPECTED_TITLE and self.is_element_present(
-            self.FIRST_NAME_HEADER
+            self.FIRST_NAME_HEADER,
         )
 
     def click_first_name_header(self) -> None:
         """Click the first name header."""
         self.click_element(self.FIRST_NAME_HEADER)
 
-    def get_customer_names(self) -> List[str]:
+    def get_customer_names(self) -> list[str]:
         """Get the list of customer first names.
 
         Returns:
             List[str]: List of customer first names
         """
-        customer_rows: List[WebElement] = self.wait_for_elements(self.CUSTOMER_ROWS)
+        customer_rows: list[WebElement] = self.wait_for_elements(self.CUSTOMER_ROWS)
         return [row.find_element(By.XPATH, "./td[1]").text for row in customer_rows]
 
     @staticmethod
-    def sort_names_programmatically(names: List[str]) -> List[str]:
+    def sort_names_programmatically(names: list[str]) -> list[str]:
         """Return a list of names sorted alphabetically.
 
         Args:
@@ -74,13 +76,14 @@ class CustomerListPage(BasePage):
         return sorted(names)
 
     @staticmethod
-    def get_average_name_length(names: List[str]) -> float:
+    def get_average_name_length(names: list[str]) -> float:
         """Calculate the average length of customer names."""
         return mean(len(name) for name in names)
 
     @staticmethod
     def find_name_closest_to_average_length(
-        names: List[str], average_length: float
+        names: list[str],
+        average_length: float,
     ) -> str:
         """Find the name with length closest to the average length."""
         return min(names, key=lambda name: abs(len(name) - average_length))
@@ -100,9 +103,10 @@ class CustomerListPage(BasePage):
 
     def find_customer_row_by_name(self, name: str) -> WebElement:
         """Find the row corresponding to the customer name."""
-        customer_rows: List[WebElement] = self.wait_for_elements(self.CUSTOMER_ROWS)
+        customer_rows: list[WebElement] = self.wait_for_elements(self.CUSTOMER_ROWS)
         for row in customer_rows:
             first_name_element = self.find_element((By.XPATH, "./td[1]"))
             if first_name_element.text == name:
                 return row
-        raise ValueError(f"Customer with name '{name}' not found")
+        error_message = f"Customer with name '{name}' not found"
+        raise ValueError(error_message)

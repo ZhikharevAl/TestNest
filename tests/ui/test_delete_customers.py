@@ -1,5 +1,7 @@
 import allure
 import pytest
+from selenium.webdriver.chrome.webdriver import WebDriver
+
 from pages.customer_list_page import CustomerListPage
 
 
@@ -21,10 +23,33 @@ from pages.customer_list_page import CustomerListPage
 </ul>
 """)
 class TestDeleteCustomer:
+    """
+    A test class for verifying the deletion of a customer with an average name length.
+
+    This class contains a test that ensures the functionality of deleting a customer
+    whose name is of average length from the customer list.
+
+    Methods:
+        test_delete_customer_with_average_name_length(browser: WebDriver) -> None:
+            Test deleting a customer with an average name length.
+    """
+
     @allure.story("Delete customer with average name length")
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.ui
-    def test_delete_customer_with_average_name_length(self, browser):
+    def test_delete_customer_with_average_name_length(self, browser: WebDriver) -> None:
+        """
+        Test deleting a customer with an average name length.
+
+        This test verifies the functionality of deleting a customer
+        whose name is of average length from the customer list.
+
+        Args:
+            browser (WebDriver): The Selenium WebDriver instance.
+
+        Returns:
+            None
+        """
         with allure.step("Open Customer List page"):
             customer_list_page = CustomerListPage(browser)
             customer_list_page.open()
@@ -41,7 +66,8 @@ class TestDeleteCustomer:
         with allure.step("Delete customer with average name length"):
             average_length = customer_list_page.get_average_name_length(initial_names)
             deleted_name = customer_list_page.find_name_closest_to_average_length(
-                initial_names, average_length
+                initial_names,
+                average_length,
             )
             customer_list_page.delete_customer(deleted_name)
 

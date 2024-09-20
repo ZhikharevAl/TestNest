@@ -1,14 +1,20 @@
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
-from typing import Tuple, Any, List
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class BasePage:
-    """Base class to initialize the base page that will be called from all pages"""
+    """Base class to initialize the base page that will be called from all pages."""
 
-    def __init__(self, browser, base_url: str = ""):
+    def __init__(self, browser: WebDriver, base_url: str = "") -> None:
+        """Initialize the base page with the given browser and base URL.
+
+        Args:
+            browser (WebDriver): The Selenium WebDriver instance.
+            base_url (str, optional): The base URL of the application. Defaults to "".
+        """
         self.browser = browser
         self.base_url = base_url
         self.timeout = 10
@@ -29,12 +35,12 @@ class BasePage:
         """
         return self.browser.title
 
-    def find_element(self, locator: Tuple[str, str]) -> Any:
+    def find_element(self, locator: tuple[str, str]) -> WebElement:
         """Find an element on the page.
 
         Args:
-            locator (Tuple[str, str]): The locator of the
-             element (e.g., (By.ID, "example")).
+            locator (Tuple[str, str]): The locator of
+            the element (e.g., (By.ID, "example")).
 
         Returns:
             WebElement: The found element.
@@ -45,11 +51,10 @@ class BasePage:
         try:
             return self.browser.find_element(*locator)
         except NoSuchElementException as e:
-            raise NoSuchElementException(
-                f"Element not found with locator: " f"{locator}"
-            ) from e
+            error_message = f"Element not found with locator: {locator}"
+            raise NoSuchElementException(error_message) from e
 
-    def click_element(self, locator: Tuple[str, str]) -> None:
+    def click_element(self, locator: tuple[str, str]) -> None:
         """Click on an element.
 
         Args:
@@ -58,7 +63,7 @@ class BasePage:
         element = self.find_element(locator)
         element.click()
 
-    def enter_text(self, locator: Tuple[str, str], text: str) -> None:
+    def enter_text(self, locator: tuple[str, str], text: str) -> None:
         """Enter text into an input field.
 
         Args:
@@ -69,7 +74,7 @@ class BasePage:
         element.clear()
         element.send_keys(text)
 
-    def is_element_present(self, locator: Tuple[str, str]) -> bool:
+    def is_element_present(self, locator: tuple[str, str]) -> bool:
         """Check if an element is present on the page.
 
         Args:
@@ -80,11 +85,16 @@ class BasePage:
         """
         try:
             self.find_element(locator)
-            return True
         except NoSuchElementException:
             return False
+        else:
+            return True
 
-    def wait_for_element(self, locator: Tuple[str, str], timeout: int = None) -> Any:
+    def wait_for_element(
+        self,
+        locator: tuple[str, str],
+        timeout: int | None = None,
+    ) -> WebElement:
         """Wait for an element to be present on the page.
 
         Args:
@@ -101,16 +111,19 @@ class BasePage:
             timeout = self.timeout
         try:
             return WebDriverWait(self.browser, timeout).until(
-                EC.presence_of_element_located(locator)
+                EC.presence_of_element_located(locator),
             )
         except TimeoutException as e:
-            raise TimeoutException(
-                f"Element not found within {timeout} " f"seconds. Locator: {locator}"
-            ) from e
+            error_message = (
+                f"Element not found within {timeout} seconds. Locator: {locator}"
+            )
+            raise TimeoutException(error_message) from e
 
     def wait_for_elements(
-        self, locator: Tuple[str, str], timeout: int = None
-    ) -> List[WebElement]:
+        self,
+        locator: tuple[str, str],
+        timeout: int | None = None,
+    ) -> list[WebElement]:
         """Wait for multiple elements to be present on the page.
 
         Args:
@@ -122,24 +135,25 @@ class BasePage:
 
         Raises:
             TimeoutException: If the elements are not found within the specified
-                timeout.
+            timeout.
         """
         if timeout is None:
             timeout = self.timeout
         try:
             return WebDriverWait(self.browser, timeout).until(
-                EC.presence_of_all_elements_located(locator)
+                EC.presence_of_all_elements_located(locator),
             )
         except TimeoutException as e:
-            raise TimeoutException(
+            error_message = (
                 f"Elements not found within {timeout} seconds. Locator: {locator}"
-            ) from e
+            )
+            raise TimeoutException(error_message) from e
 
-    def clear_field(self, locator: tuple) -> None:
+    def clear_field(self, locator: tuple[str, str]) -> None:
         """Clear the field specified by the locator.
 
         Args:
-            locator (tuple): Locator for the input field (By, locator string)
+            locator (Tuple[str, str]): Locator for the input field (By, locator string)
         """
         element = self.wait_for_element(locator)
         element.clear()

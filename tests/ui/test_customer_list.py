@@ -1,5 +1,7 @@
 import allure
 import pytest
+from selenium.webdriver.chrome.webdriver import WebDriver
+
 from pages.customer_list_page import CustomerListPage
 
 
@@ -18,11 +20,42 @@ from pages.customer_list_page import CustomerListPage
 </ul>
 """)
 class TestCustomerList:
+    """
+
+    A test class for verifying the functionality of the customer list in the XYZ Bank.
+
+    This class contains tests that ensure the customer list page can be opened, loaded,
+    and that customers can be sorted by their first names in both descending
+    and ascending order.
+
+    Methods:
+        test_sort_customers_by_first_name(browser: WebDriver,
+                                        sort_direction: str) -> None:
+            Test sorting customers by first name in the specified order.
+    """
+
     @allure.story("Sort customers by first name")
     @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.ui
     @pytest.mark.parametrize("sort_direction", ["descending", "ascending"])
-    def test_sort_customers_by_first_name(self, browser, sort_direction):
+    def test_sort_customers_by_first_name(
+        self, browser: WebDriver, sort_direction: str
+    ) -> None:
+        """
+        Test sorting customers by first name in the specified order.
+
+        This test verifies that customers can be sorted by their first names
+        in either descending or ascending order and compares the programmatically
+        sorted names with the UI-sorted names.
+
+        Args:
+            browser (WebDriver): The Selenium WebDriver instance.
+            sort_direction (str): The direction to sort the names
+            ('descending' or 'ascending').
+
+        Returns:
+            None
+        """
         with allure.step("Open Customer List page"):
             customer_list_page = CustomerListPage(browser)
             customer_list_page.open()
