@@ -1,4 +1,4 @@
-import secrets
+import random
 import string
 
 from faker import Faker
@@ -21,7 +21,7 @@ class CustomProvider(BaseProvider):
         Returns:
             str: The generated custom postcode.
         """
-        return "".join(secrets.choice(string.digits) for _ in range(10))
+        return "".join(random.choices(string.digits, k=10))
 
     @staticmethod
     def custom_first_name(postcode: str) -> str:
