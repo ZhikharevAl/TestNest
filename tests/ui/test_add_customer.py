@@ -65,7 +65,7 @@ class TestAddCustomer:
 
         with allure.step("Open Add Customer page"):
             customer_page = AddCustomerPage(browser)
-            customer_page.open()
+            customer_page.open_page()
 
         with allure.step("Verify page is loaded"):
             assert customer_page.is_page_loaded(), "Add Customer page is not loaded"

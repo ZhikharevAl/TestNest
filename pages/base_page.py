@@ -4,28 +4,27 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+from config.config import BASE_URL, DEFAULT_TIMEOUT
+
 
 class BasePage:
     """Base class to initialize the base page that will be called from all pages."""
 
-    def __init__(self, browser: WebDriver, base_url: str = "") -> None:
+    def __init__(self, browser: WebDriver, url: str = "") -> None:
         """Initialize the base page with the given browser and base URL.
 
         Args:
             browser (WebDriver): The Selenium WebDriver instance.
-            base_url (str, optional): The base URL of the application. Defaults to "".
+            url (str, optional): The base URL of the application. Defaults to "".
         """
         self.browser = browser
-        self.base_url = base_url
-        self.timeout = 10
+        self.base_url = BASE_URL
+        self.url = url
+        self.timeout = DEFAULT_TIMEOUT
 
-    def open_page(self, url: str = "") -> None:
-        """Open a page using the given URL.
-
-        Args:
-            url (str, optional): The URL to open. If not provided, opens the base URL.
-        """
-        self.browser.get(f"{self.base_url}{url}")
+    def open_page(self) -> None:
+        """Open a page using the given URL."""
+        self.browser.get(f"{self.base_url}{self.url}")
 
     def get_title(self) -> str:
         """Get the title of the current page.

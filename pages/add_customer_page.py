@@ -3,14 +3,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
+from config.config import ADD_CUSTOMER_URL, XYZ_BANK_TITLE
 from pages.base_page import BasePage
 
 
 class AddCustomerPage(BasePage):
     """Page object for the Add Customer page in XYZ Bank application."""
-
-    URL = "/manager/addCust"
-    EXPECTED_TITLE = "XYZ Bank"
 
     # Locators
     FIRST_NAME_INPUT: tuple[str, str] = (By.XPATH, '//input[@ng-model="fName"]')
@@ -24,22 +22,7 @@ class AddCustomerPage(BasePage):
         Args:
             browser: WebDriver instance
         """
-        super().__init__(
-            browser,
-            base_url="https://www.globalsqa.com/angularJs-protractor/BankingProject/#",
-        )
-
-    def open(self) -> None:
-        """Open the Add Customer page."""
-        self.open_page(self.URL)
-
-    def get_page_title(self) -> str:
-        """Get the title of the page.
-
-        Returns:
-            str: The title of the page
-        """
-        return self.get_title()
+        super().__init__(browser, url=ADD_CUSTOMER_URL)
 
     def is_page_loaded(self) -> bool:
         """Check if the page is loaded.
@@ -47,7 +30,9 @@ class AddCustomerPage(BasePage):
         Returns:
             bool: True if the page is loaded, False otherwise
         """
-        return self.get_page_title() == self.EXPECTED_TITLE
+        return self.get_title() == XYZ_BANK_TITLE and self.is_element_present(
+            self.FIRST_NAME_INPUT
+        )
 
     def enter_first_name(self, first_name: str) -> None:
         """Enter the first name in the input field.

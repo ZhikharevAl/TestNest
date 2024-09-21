@@ -2,14 +2,12 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
+from config.config import CUSTOMER_LIST_URL, XYZ_BANK_TITLE
 from pages.base_page import BasePage
 
 
 class CustomerListPage(BasePage):
     """Page object for the Customer List page in XYZ Bank application."""
-
-    URL = "/manager/list"
-    EXPECTED_TITLE = "XYZ Bank"
 
     # Locators
     FIRST_NAME_HEADER: tuple[str, str] = (
@@ -29,14 +27,7 @@ class CustomerListPage(BasePage):
         Args:
             browser: WebDriver instance
         """
-        super().__init__(
-            browser,
-            base_url="https://www.globalsqa.com/angularJs-protractor/BankingProject/#",
-        )
-
-    def open(self) -> None:
-        """Open the Customer List page."""
-        self.open_page(self.URL)
+        super().__init__(browser, url=CUSTOMER_LIST_URL)
 
     def is_page_loaded(self) -> bool:
         """Check if the page is loaded.
@@ -44,8 +35,8 @@ class CustomerListPage(BasePage):
         Returns:
             bool: True if the page is loaded, False otherwise
         """
-        return self.get_title() == self.EXPECTED_TITLE and self.is_element_present(
-            self.FIRST_NAME_HEADER,
+        return self.get_title() == XYZ_BANK_TITLE and self.is_element_present(
+            self.FIRST_NAME_HEADER
         )
 
     def click_first_name_header(self) -> None:

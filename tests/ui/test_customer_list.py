@@ -58,7 +58,7 @@ class TestCustomerList:
         """
         with allure.step("Open Customer List page"):
             customer_list_page = CustomerListPage(browser)
-            customer_list_page.open()
+            customer_list_page.open_page()
 
         with allure.step("Verify page is loaded"):
             assert (
