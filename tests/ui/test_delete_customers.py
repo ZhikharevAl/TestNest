@@ -3,6 +3,7 @@ import pytest
 from selenium.webdriver.chrome.webdriver import WebDriver
 
 from pages.customer_list_page import CustomerListPage
+from utils import find_name_closest_to_average_length, get_average_name_length
 
 
 @allure.epic("Customer Management")
@@ -64,12 +65,12 @@ class TestDeleteCustomer:
             assert len(initial_names) > 0, "No customers found"
 
         with allure.step("Delete customer with average name length"):
-            average_length = customer_list_page.get_average_name_length(initial_names)
-            deleted_name = customer_list_page.find_name_closest_to_average_length(
+            average_length = get_average_name_length(initial_names)
+            deleted_name = find_name_closest_to_average_length(
                 initial_names,
                 average_length,
             )
-            customer_list_page.delete_customer(deleted_name)
+        customer_list_page.delete_customer(deleted_name)
 
         with allure.step("Clear input"):
             customer_list_page.clear_input()

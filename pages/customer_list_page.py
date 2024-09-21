@@ -1,5 +1,3 @@
-from statistics import mean
-
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
@@ -74,19 +72,6 @@ class CustomerListPage(BasePage):
             List[str]: Sorted list of names
         """
         return sorted(names)
-
-    @staticmethod
-    def get_average_name_length(names: list[str]) -> float:
-        """Calculate the average length of customer names."""
-        return mean(len(name) for name in names)
-
-    @staticmethod
-    def find_name_closest_to_average_length(
-        names: list[str],
-        average_length: float,
-    ) -> str:
-        """Find the name with length closest to the average length."""
-        return min(names, key=lambda name: abs(len(name) - average_length))
 
     def search_customer(self, name: str) -> None:
         """Search for a customer by name."""
