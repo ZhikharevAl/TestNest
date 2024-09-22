@@ -1,3 +1,4 @@
+import allure
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
@@ -11,12 +12,7 @@ class BasePage:
     """Base class to initialize the base page that will be called from all pages."""
 
     def __init__(self, browser: WebDriver, url: str = "") -> None:
-        """Initialize the base page with the given browser and base URL.
-
-        Args:
-            browser (WebDriver): The Selenium WebDriver instance.
-            url (str, optional): The base URL of the application. Defaults to "".
-        """
+        """Initialize the base page with the given browser and base URL."""
         self.browser = browser
         self.base_url = BASE_URL
         self.url = url
@@ -24,29 +20,11 @@ class BasePage:
 
     def open_page(self) -> None:
         """Open a page using the given URL."""
-        self.browser.get(f"{self.base_url}{self.url}")
-
-    def get_title(self) -> str:
-        """Get the title of the current page.
-
-        Returns:
-            str: The title of the current page.
-        """
-        return self.browser.title
+        with allure.step(f"Opening page: {self.base_url}{self.url}"):
+            self.browser.get(f"{self.base_url}{self.url}")
 
     def find_element(self, locator: tuple[str, str]) -> WebElement:
-        """Find an element on the page.
-
-        Args:
-            locator (Tuple[str, str]): The locator of
-            the element (e.g., (By.ID, "example")).
-
-        Returns:
-            WebElement: The found element.
-
-        Raises:
-            NoSuchElementException: If the element is not found.
-        """
+        """Find an element on the page."""
         try:
             return self.browser.find_element(*locator)
         except NoSuchElementException as e:
@@ -54,34 +32,19 @@ class BasePage:
             raise NoSuchElementException(error_message) from e
 
     def click_element(self, locator: tuple[str, str]) -> None:
-        """Click on an element.
-
-        Args:
-            locator (Tuple[str, str]): The locator of the element to click.
-        """
-        element = self.find_element(locator)
-        element.click()
+        """Click on an element."""
+        with allure.step(f"Clicking element with locator: {locator}"):
+            element = self.find_element(locator)
+            element.click()
 
     def enter_text(self, locator: tuple[str, str], text: str) -> None:
-        """Enter text into an input field.
-
-        Args:
-            locator (Tuple[str, str]): The locator of the input field.
-            text (str): The text to enter.
-        """
+        """Enter text into an input field."""
         element = self.find_element(locator)
         element.clear()
         element.send_keys(text)
 
     def is_element_present(self, locator: tuple[str, str]) -> bool:
-        """Check if an element is present on the page.
-
-        Args:
-            locator (Tuple[str, str]): The locator of the element.
-
-        Returns:
-            bool: True if the element is present, False otherwise.
-        """
+        """Check if an element is present on the page."""
         try:
             self.find_element(locator)
         except NoSuchElementException:
@@ -90,22 +53,9 @@ class BasePage:
             return True
 
     def wait_for_element(
-        self,
-        locator: tuple[str, str],
-        timeout: int | None = None,
+        self, locator: tuple[str, str], timeout: int | None = None
     ) -> WebElement:
-        """Wait for an element to be present on the page.
-
-        Args:
-            locator (Tuple[str, str]): The locator of the element to wait for.
-            timeout (int, optional): The maximum time to wait. Defaults to self.timeout.
-
-        Returns:
-            WebElement: The found element.
-
-        Raises:
-            TimeoutException: If the element is not found within the specified timeout.
-        """
+        """Wait for an element to be present on the page."""
         if timeout is None:
             timeout = self.timeout
         try:
@@ -119,23 +69,9 @@ class BasePage:
             raise TimeoutException(error_message) from e
 
     def wait_for_elements(
-        self,
-        locator: tuple[str, str],
-        timeout: int | None = None,
+        self, locator: tuple[str, str], timeout: int | None = None
     ) -> list[WebElement]:
-        """Wait for multiple elements to be present on the page.
-
-        Args:
-            locator (Tuple[str, str]): The locator of the elements to wait for.
-            timeout (int, optional): The maximum time to wait. Defaults to self.timeout.
-
-        Returns:
-            List[WebElement]: The found elements.
-
-        Raises:
-            TimeoutException: If the elements are not found within the specified
-            timeout.
-        """
+        """Wait for multiple elements to be present on the page."""
         if timeout is None:
             timeout = self.timeout
         try:
@@ -149,10 +85,6 @@ class BasePage:
             raise TimeoutException(error_message) from e
 
     def clear_field(self, locator: tuple[str, str]) -> None:
-        """Clear the field specified by the locator.
-
-        Args:
-            locator (Tuple[str, str]): Locator for the input field (By, locator string)
-        """
+        """Clear the field specified by the locator."""
         element = self.wait_for_element(locator)
         element.clear()
