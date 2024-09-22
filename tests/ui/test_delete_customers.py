@@ -3,7 +3,6 @@ import pytest
 from selenium.webdriver.chrome.webdriver import WebDriver
 
 from pages.customer_list_page import CustomerListPage
-from utils import find_name_closest_to_average_length, get_average_name_length
 
 
 @allure.epic("Customer Management")
@@ -24,68 +23,21 @@ from utils import find_name_closest_to_average_length, get_average_name_length
 </ul>
 """)
 class TestDeleteCustomer:
-    """
-    A test class for verifying the deletion of a customer with an average name length.
-
-    This class contains a test that ensures the functionality of deleting a customer
-    whose name is of average length from the customer list.
-
-    Methods:
-        test_delete_customer_with_average_name_length(browser: WebDriver) -> None:
-            Test deleting a customer with an average name length.
-    """
+    """A class for verifying the deletion of a customer with an average name length."""
 
     @allure.story("Delete customer with average name length")
-    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.severity(allure.severity_level.NORMAL)
     @pytest.mark.ui
     def test_delete_customer_with_average_name_length(self, browser: WebDriver) -> None:
-        """
-        Test deleting a customer with an average name length.
-
-        This test verifies the functionality of deleting a customer
-        whose name is of average length from the customer list.
-
-        Args:
-            browser (WebDriver): The Selenium WebDriver instance.
-
-        Returns:
-            None
-        """
-        with allure.step("Open Customer List page"):
-            customer_list_page = CustomerListPage(browser)
-            customer_list_page.open_page()
-
-        with allure.step("Verify page is loaded"):
-            assert (
-                customer_list_page.is_page_loaded()
-            ), "Customer List page is not loaded"
-
-        with allure.step("Get initial customer names"):
-            initial_names = customer_list_page.get_customer_names()
-            assert len(initial_names) > 0, "No customers found"
-
-        with allure.step("Delete customer with average name length"):
-            average_length = get_average_name_length(initial_names)
-            deleted_name = find_name_closest_to_average_length(
-                initial_names,
-                average_length,
-            )
-        customer_list_page.delete_customer(deleted_name)
-
-        with allure.step("Clear input"):
-            customer_list_page.clear_input()
-
-        with allure.step("Verify customer was deleted"):
-            remaining_names = customer_list_page.get_customer_names()
-            assert (
-                deleted_name not in remaining_names
-            ), f"Customer '{deleted_name}' was not deleted"
-            assert (
-                len(remaining_names) == len(initial_names) - 1
-            ), "Number of customers did not decrease by 1"
-
-        allure.attach(
-            browser.get_screenshot_as_png(),
-            name="customer_list_after_deletion",
-            attachment_type=allure.attachment_type.PNG,
+        """Test deleting a customer with an average name length."""
+        self.customer_list_page = CustomerListPage(browser)
+        self.customer_list_page.open_page()
+        assert self.customer_list_page.is_page_loaded(), (
+            "Customer List page " "is not loaded"
+        )
+        deleted_name, initial_names, remaining_names = (
+            self.customer_list_page.delete_customer_with_average_length()
+        )
+        self.customer_list_page.verify_delete(
+            deleted_name, initial_names, remaining_names
         )
