@@ -15,11 +15,13 @@ def browser() -> WebDriver:
         WebDriver: The WebDriver instance for the browser.
     """
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--window-size=1920,1080")
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10)
-    return driver
+
+    yield driver
+    driver.quit()
 
 
 @pytest.fixture(autouse=True)
