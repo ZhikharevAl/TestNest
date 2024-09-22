@@ -1,9 +1,10 @@
+import allure
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from config.config import ADD_CUSTOMER_URL, XYZ_BANK_TITLE
+from config.config import ADD_CUSTOMER_URL
 from pages.base_page import BasePage
 
 
@@ -17,22 +18,17 @@ class AddCustomerPage(BasePage):
     ADD_CUSTOMER_BUTTON: tuple[str, str] = (By.XPATH, '//button[@type="submit"]')
 
     def __init__(self, browser: WebDriver) -> None:
-        """Initialize the AddCustomerPage.
-
-        Args:
-            browser: WebDriver instance
-        """
+        """Initialize the AddCustomerPage."""
         super().__init__(browser, url=ADD_CUSTOMER_URL)
 
+    @allure.step("Check if Add Customer page is loaded")
     def is_page_loaded(self) -> bool:
         """Check if the page is loaded.
 
         Returns:
             bool: True if the page is loaded, False otherwise
         """
-        return self.get_title() == XYZ_BANK_TITLE and self.is_element_present(
-            self.FIRST_NAME_INPUT
-        )
+        return self.is_element_present(self.ADD_CUSTOMER_BUTTON)
 
     def enter_first_name(self, first_name: str) -> None:
         """Enter the first name in the input field.
@@ -59,10 +55,12 @@ class AddCustomerPage(BasePage):
         """
         self.enter_text(self.POST_CODE_INPUT, post_code)
 
+    @allure.step("Click Add Customer button")
     def click_add_customer(self) -> None:
         """Click the Add Customer button."""
         self.click_element(self.ADD_CUSTOMER_BUTTON)
 
+    @allure.step("Add customer")
     def add_customer(self, first_name: str, last_name: str, post_code: str) -> None:
         """Add a new customer.
 
@@ -74,7 +72,9 @@ class AddCustomerPage(BasePage):
         self.enter_first_name(first_name)
         self.enter_last_name(last_name)
         self.enter_post_code(post_code)
+        self.click_add_customer()
 
+    @allure.step("Get alert text")
     def get_alert_text(self) -> str:
         """Get the text of the alert.
 
@@ -85,7 +85,27 @@ class AddCustomerPage(BasePage):
         alert = self.browser.switch_to.alert
         return alert.text
 
+    @allure.step("Accept alert")
     def accept_alert(self) -> None:
         """Accept the alert."""
         alert = self.browser.switch_to.alert
         alert.accept()
+
+    @allure.step("Verify customer addition")
+    def verify(self) -> None:
+        """Verify the success message after adding a customer.
+
+        Raises:
+            AssertionError: If the success message is not as expected
+        """
+        alert_text = self.get_alert_text()
+        assert (
+            "Customer added successfully" in alert_text
+        ), f"Unexpected alert message: {alert_text}"
+        self.accept_alert()
+
+        allure.attach(
+            f"Alert Text: {alert_text}",
+            name="customer_addition_result",
+            attachment_type=allure.attachment_type.TEXT,
+        )
