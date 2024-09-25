@@ -1,0 +1,15 @@
+{
+    "id": 7,
+    "title": "Thus.",
+    "verified": true,
+    "addition": {
+        "id": 7,
+        "additional_info": "Meeting senior this.",
+        "additional_number": 975
+    },
+    "important_numbers": [
+        45,
+        61,
+        45
+    ]
+}
