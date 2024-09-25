@@ -1,0 +1,15 @@
+{
+    "id": 15,
+    "title": "Light practice.",
+    "verified": false,
+    "addition": {
+        "id": 15,
+        "additional_info": "Baby which loss.",
+        "additional_number": 541
+    },
+    "important_numbers": [
+        21,
+        7,
+        25
+    ]
+}
