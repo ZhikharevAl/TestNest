@@ -1,0 +1,2 @@
+2024-09-25 22:59:44 [DEBUG] Starting new HTTPS connection (1): 3f79-95-32-133-30.ngrok-free.app:443
+2024-09-25 22:59:44 [DEBUG] https://3f79-95-32-133-30.ngrok-free.app:443 "GET /api/getAll HTTP/11" 200 13

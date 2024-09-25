@@ -1,8 +1,0 @@
-2024-09-25 22:59:41 [DEBUG] Starting new HTTPS connection (1): 3f79-95-32-133-30.ngrok-free.app:443
-2024-09-25 22:59:42 [DEBUG] https://3f79-95-32-133-30.ngrok-free.app:443 "POST /api/create HTTP/11" 200 1
-2024-09-25 22:59:42 [DEBUG] Starting new HTTPS connection (1): 3f79-95-32-133-30.ngrok-free.app:443
-2024-09-25 22:59:42 [DEBUG] https://3f79-95-32-133-30.ngrok-free.app:443 "PATCH /api/patch/7 HTTP/11" 204 0
-2024-09-25 22:59:42 [DEBUG] Starting new HTTPS connection (1): 3f79-95-32-133-30.ngrok-free.app:443
-2024-09-25 22:59:43 [DEBUG] https://3f79-95-32-133-30.ngrok-free.app:443 "GET /api/get/7 HTTP/11" 200 165
-2024-09-25 22:59:43 [DEBUG] Starting new HTTPS connection (1): 3f79-95-32-133-30.ngrok-free.app:443
-2024-09-25 22:59:43 [DEBUG] https://3f79-95-32-133-30.ngrok-free.app:443 "DELETE /api/delete/7 HTTP/11" 204 0
