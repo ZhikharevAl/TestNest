@@ -1,7 +1,5 @@
 name: Run API Tests with Allure Report
 on:
-  push:
-  pull_request:
   workflow_dispatch:
 
 jobs:
