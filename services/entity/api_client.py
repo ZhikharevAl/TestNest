@@ -17,14 +17,14 @@ class APIClient:
     @allure.step("Create entity")
     def create_entity(self) -> str:
         """Creates a new entity and returns its ID."""
-        response = self.http_client.post("/create", self.payloads.create_entity)
+        response = self.http_client.post("/api/create", self.payloads.create_entity)
         response.raise_for_status()
         return response.text
 
     @allure.step("Get entity")
     def get_entity(self, entity_id: str) -> EntityResponse:
         """Gets an entity with the given entity ID."""
-        response = self.http_client.get(f"/get/{entity_id}")
+        response = self.http_client.get(f"/api/get/{entity_id}")
         response.raise_for_status()
         data = response.json()
         return EntityResponse(**data)
@@ -39,7 +39,7 @@ class APIClient:
     ) -> list[EntityResponse]:
         """Gets all entities with the provided filters."""
         params = {k: v for k, v in locals().items() if v is not None and k != "self"}
-        response = self.http_client.get("/getAll", params=params)
+        response = self.http_client.get("/api/getAll", params=params)
         response.raise_for_status()
         data = response.json()
         entities = data["entity"]
@@ -48,11 +48,11 @@ class APIClient:
     @allure.step("Update entity")
     def update_entity(self, entity_id: str, entity: EntityRequest) -> None:
         """Updates an entity with the given entity ID and data."""
-        response = self.http_client.patch(f"/patch/{entity_id}", entity.model_dump())
+        response = self.http_client.patch(f"/api/patch/{entity_id}", entity.model_dump())
         response.raise_for_status()
 
     @allure.step("Delete entity")
     def delete_entity(self, entity_id: str) -> None:
         """Deletes an entity with the given entity ID."""
-        response = self.http_client.delete(f"/delete/{entity_id}")
+        response = self.http_client.delete(f"/api/delete/{entity_id}")
         response.raise_for_status()
