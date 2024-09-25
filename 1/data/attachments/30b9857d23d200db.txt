@@ -1,0 +1,1 @@
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:8080
