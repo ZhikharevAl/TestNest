@@ -1,0 +1,15 @@
+{
+    "id": 3,
+    "title": "Although.",
+    "verified": true,
+    "addition": {
+        "id": 3,
+        "additional_info": "Bank entire.",
+        "additional_number": 14
+    },
+    "important_numbers": [
+        46,
+        21,
+        96
+    ]
+}

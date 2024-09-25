@@ -1,5 +1,0 @@
-2024-09-25 01:59:40 [DEBUG] Starting new HTTP connection (1): localhost:8080
-2024-09-25 01:59:45 [DEBUG] Starting new HTTP connection (1): localhost:8080
-2024-09-25 01:59:50 [DEBUG] Starting new HTTP connection (1): localhost:8080
-2024-09-25 01:59:55 [DEBUG] Starting new HTTP connection (1): localhost:8080
-2024-09-25 02:00:00 [DEBUG] Starting new HTTP connection (1): localhost:8080
