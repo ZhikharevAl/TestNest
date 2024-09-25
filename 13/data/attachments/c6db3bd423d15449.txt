@@ -1,0 +1,15 @@
+{
+    "id": 19,
+    "title": "Think few.",
+    "verified": true,
+    "addition": {
+        "id": 19,
+        "additional_info": "Range study as what.",
+        "additional_number": 718
+    },
+    "important_numbers": [
+        25,
+        77,
+        20
+    ]
+}

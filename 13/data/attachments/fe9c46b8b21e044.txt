@@ -1,0 +1,15 @@
+{
+    "id": 17,
+    "title": "Everybody.",
+    "verified": false,
+    "addition": {
+        "id": 17,
+        "additional_info": "She power.",
+        "additional_number": 284
+    },
+    "important_numbers": [
+        5,
+        90,
+        51
+    ]
+}
