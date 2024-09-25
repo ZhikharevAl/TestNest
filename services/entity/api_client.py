@@ -48,7 +48,9 @@ class APIClient:
     @allure.step("Update entity")
     def update_entity(self, entity_id: str, entity: EntityRequest) -> None:
         """Updates an entity with the given entity ID and data."""
-        response = self.http_client.patch(f"/api/patch/{entity_id}", entity.model_dump())
+        response = self.http_client.patch(
+            f"/api/patch/{entity_id}", entity.model_dump()
+        )
         response.raise_for_status()
 
     @allure.step("Delete entity")
