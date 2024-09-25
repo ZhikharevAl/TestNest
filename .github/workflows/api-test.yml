@@ -1,4 +1,5 @@
 name: Run API Tests with Allure Report
+
 on:
   workflow_dispatch:
 
@@ -49,3 +50,4 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.APIKEY }}
           PUBLISH_BRANCH: gh-pages
           PUBLISH_DIR: allure-history
+
