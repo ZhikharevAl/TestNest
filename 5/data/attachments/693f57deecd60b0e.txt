@@ -1,0 +1,15 @@
+{
+    "id": 19,
+    "title": "Finish.",
+    "verified": false,
+    "addition": {
+        "id": 19,
+        "additional_info": "Quite along.",
+        "additional_number": 681
+    },
+    "important_numbers": [
+        21,
+        51,
+        3
+    ]
+}

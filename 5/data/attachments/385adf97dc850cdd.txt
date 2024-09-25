@@ -1,0 +1,15 @@
+{
+    "id": 18,
+    "title": "Community kitchen.",
+    "verified": false,
+    "addition": {
+        "id": 18,
+        "additional_info": "Could very.",
+        "additional_number": 765
+    },
+    "important_numbers": [
+        21,
+        16,
+        41
+    ]
+}
