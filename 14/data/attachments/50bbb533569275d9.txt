@@ -1,0 +1,15 @@
+{
+    "id": 15,
+    "title": "Sport dark.",
+    "verified": true,
+    "addition": {
+        "id": 15,
+        "additional_info": "Training field.",
+        "additional_number": 841
+    },
+    "important_numbers": [
+        45,
+        7,
+        95
+    ]
+}
