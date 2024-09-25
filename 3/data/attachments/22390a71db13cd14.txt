@@ -1,0 +1,15 @@
+{
+    "id": 10,
+    "title": "Data.",
+    "verified": true,
+    "addition": {
+        "id": 10,
+        "additional_info": "Return future.",
+        "additional_number": 828
+    },
+    "important_numbers": [
+        2,
+        2,
+        84
+    ]
+}

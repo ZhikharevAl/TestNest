@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Sep 25 02:00:16 GMT 2024","Wed Sep 25 02:00:17 GMT 2024","429","tests.api","test_api","TestEntityAPI","","","Test get all entities","Verify that all entities can be retrieved"
+"passed","Wed Sep 25 02:00:15 GMT 2024","Wed Sep 25 02:00:15 GMT 2024","0","tests.api","test_api","TestEntityAPI","","","Test create entity","Verify that an entity can be created successfully"
+"passed","Wed Sep 25 02:00:16 GMT 2024","Wed Sep 25 02:00:16 GMT 2024","432","tests.api","test_api","TestEntityAPI","","","Test get entity","Verify that a specific entity can be retrieved"
+"passed","Wed Sep 25 02:00:17 GMT 2024","Wed Sep 25 02:00:18 GMT 2024","870","tests.api","test_api","TestEntityAPI","","","Test update entity","Verify that an entity can be updated successfully"
+"passed","Wed Sep 25 02:00:19 GMT 2024","Wed Sep 25 02:00:20 GMT 2024","1327","tests.api","test_api","TestEntityAPI","","","Test delete entity","Verify that an entity can be deleted successfully"
