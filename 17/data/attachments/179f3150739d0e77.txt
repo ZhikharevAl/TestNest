@@ -1,0 +1,15 @@
+{
+    "id": 42,
+    "title": "Direction.",
+    "verified": true,
+    "addition": {
+        "id": 42,
+        "additional_info": "Toward write.",
+        "additional_number": 435
+    },
+    "important_numbers": [
+        11,
+        43,
+        20
+    ]
+}
