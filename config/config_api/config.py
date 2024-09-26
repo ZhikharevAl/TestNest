@@ -1,1 +1,6 @@
-BASE_URL = "https://3f79-95-32-133-30.ngrok-free.app"  # change to your ngrok url
+BASE_URL = "https://0261-95-32-200-143.ngrok-free.app"  # change to your ngrok url
+CREATE_ENDPOINT = "/api/create"
+GET_ENDPOINT = "/api/get/"
+GET_ALL_ENDPOINT = "/api/getall/"
+UPDATE_ENDPOINT = "/api/patch/"
+DELETE_ENDPOINT = "/api/delete/"

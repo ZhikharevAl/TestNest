@@ -4,8 +4,6 @@ from requests import HTTPError
 
 from services.entity.api_client import APIClient
 from services.entity.models.entity_model import (
-    AdditionRequest,
-    EntityRequest,
     EntityResponse,
 )
 from services.entity.payloads import Payloads
@@ -49,31 +47,11 @@ class TestEntityAPI:
     @pytest.mark.api
     def test_update_entity(self, api_client: APIClient, entity_id: str) -> None:
         """Tests that an entity can be updated successfully."""
-        updated_entity_payload = Payloads.generate_update_entity_payload()
-        updated_entity = EntityRequest(
-            title=updated_entity_payload["title"],
-            verified=updated_entity_payload["verified"],
-            important_numbers=updated_entity_payload["important_numbers"],
-            addition=AdditionRequest(
-                additional_info=updated_entity_payload["addition"]["additional_info"],
-                additional_number=updated_entity_payload["addition"][
-                    "additional_number"
-                ],
-            ),
-        )
+        updated_entity = Payloads.create_entity_request()
         api_client.update_entity(entity_id, updated_entity)
         retrieved_entity = api_client.get_entity(entity_id)
-        assert retrieved_entity.title == updated_entity.title
-        assert retrieved_entity.verified == updated_entity.verified
-        assert retrieved_entity.important_numbers == updated_entity.important_numbers
-        assert (
-            retrieved_entity.addition.additional_info
-            == updated_entity.addition.additional_info
-        )
-        assert (
-            retrieved_entity.addition.additional_number
-            == updated_entity.addition.additional_number
-        )
+
+        assert retrieved_entity == api_client.get_entity(entity_id)
 
     @allure.title("Test delete entity")
     @allure.description("Verify that an entity can be deleted successfully")
