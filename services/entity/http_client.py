@@ -2,6 +2,7 @@ from typing import Any
 
 import requests
 
+from config.config_api.config import TIMEOUT
 from utils.allure_utils import AllureUtils
 
 
@@ -17,27 +18,27 @@ class HTTPClient:
     ) -> requests.Response:
         """Sends a GET request to the specified endpoint with the provided data."""
         url = f"{self.base_url}{endpoint}"
-        response = requests.get(url, params=params, timeout=10)
+        response = requests.get(url, params=params, timeout=TIMEOUT)
         AllureUtils.attach_response(response)
         return response
 
     def post(self, endpoint: str, data: dict[str, Any]) -> requests.Response:
         """Sends a POST request to the specified endpoint with the provided data."""
         url = f"{self.base_url}{endpoint}"
-        response = requests.post(url, json=data, timeout=10)
+        response = requests.post(url, json=data, timeout=TIMEOUT)
         AllureUtils.attach_response(response)
         return response
 
     def patch(self, endpoint: str, data: dict[str, Any]) -> requests.Response:
         """Sends a PATCH request to the specified endpoint with the provided data."""
         url = f"{self.base_url}{endpoint}"
-        response = requests.patch(url, json=data, timeout=10)
+        response = requests.patch(url, json=data, timeout=TIMEOUT)
         AllureUtils.attach_response(response)
         return response
 
     def delete(self, endpoint: str) -> requests.Response:
         """Sends a DELETE request to the specified endpoint."""
         url = f"{self.base_url}{endpoint}"
-        response = requests.delete(url, timeout=10)
+        response = requests.delete(url, timeout=TIMEOUT)
         AllureUtils.attach_response(response)
         return response
