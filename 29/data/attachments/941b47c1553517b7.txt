@@ -1,0 +1,131 @@
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.address`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.address` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.automotive`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.automotive` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.bank`.
+DEBUG    faker.factory:factory.py:86 Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.barcode`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.barcode` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.color`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.color` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.company`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.company` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.credit_card`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.credit_card` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.currency`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.currency` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.date_time`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.date_time` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.geo`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.geo` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.internet`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.internet` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.isbn`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.isbn` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.job`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.job` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.lorem`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.lorem` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.misc`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.misc` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.passport`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.passport` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.person`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.person` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.phone_number`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.phone_number` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    faker.factory:factory.py:76 Looking for locale `en_US` in provider `faker.providers.ssn`.
+DEBUG    faker.factory:factory.py:95 Provider `faker.providers.ssn` has been localized to `en_US`.
+DEBUG    faker.factory:factory.py:106 Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "linux", arch: "x86_64", lang: "python", selenium_version: "4.24" }
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: /usr/bin/google-chrome --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: "Google Chrome 129.0.6668.58 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 129.0.6668.58
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 129.0.6668.70
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 2386 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:38369/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:38369
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:38369 "POST /session HTTP/11" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x556456df96ca \u003Cunknown>\n#1 0x556456aca600 \u003Cunknown>\n#2 0x556456b0913c \u003Cunknown>\n#3 0x556456b080b2 \u003Cunknown>\n#4 0x556456b02f24 \u003Cunknown>\n#5 0x556456afe2f8 \u003Cunknown>\n#6 0x556456b48ce8 \u003Cunknown>\n#7 0x556456b3c643 \u003Cunknown>\n#8 0x556456b0cd31 \u003Cunknown>\n#9 0x556456b0d79e \u003Cunknown>\n#10 0x556456dc125b \u003Cunknown>\n#11 0x556456dc51f2 \u003Cunknown>\n#12 0x556456dae615 \u003Cunknown>\n#13 0x556456dc5d82 \u003Cunknown>\n#14 0x556456d9325f \u003Cunknown>\n#15 0x556456de8e68 \u003Cunknown>\n#16 0x556456de9040 \u003Cunknown>\n#17 0x556456df849c \u003Cunknown>\n#18 0x7f8932494ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: /usr/bin/google-chrome --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: "Google Chrome 129.0.6668.58 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 129.0.6668.58
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 129.0.6668.70
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 2820 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:50537/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:50537
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:50537 "POST /session HTTP/11" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x5574362756ca \u003Cunknown>\n#1 0x557435f46600 \u003Cunknown>\n#2 0x557435f8513c \u003Cunknown>\n#3 0x557435f840b2 \u003Cunknown>\n#4 0x557435f7ef24 \u003Cunknown>\n#5 0x557435f7a2f8 \u003Cunknown>\n#6 0x557435fc4ce8 \u003Cunknown>\n#7 0x557435fb8643 \u003Cunknown>\n#8 0x557435f88d31 \u003Cunknown>\n#9 0x557435f8979e \u003Cunknown>\n#10 0x55743623d25b \u003Cunknown>\n#11 0x5574362411f2 \u003Cunknown>\n#12 0x55743622a615 \u003Cunknown>\n#13 0x557436241d82 \u003Cunknown>\n#14 0x55743620f25f \u003Cunknown>\n#15 0x557436264e68 \u003Cunknown>\n#16 0x557436265040 \u003Cunknown>\n#17 0x55743627449c \u003Cunknown>\n#18 0x7f132ac94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: /usr/bin/google-chrome --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: "Google Chrome 129.0.6668.58 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 129.0.6668.58
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 129.0.6668.70
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 3354 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:58255/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:58255
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:58255 "POST /session HTTP/11" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x5574a67e16ca \u003Cunknown>\n#1 0x5574a64b2600 \u003Cunknown>\n#2 0x5574a64f113c \u003Cunknown>\n#3 0x5574a64f00b2 \u003Cunknown>\n#4 0x5574a64eaf24 \u003Cunknown>\n#5 0x5574a64e62f8 \u003Cunknown>\n#6 0x5574a6530ce8 \u003Cunknown>\n#7 0x5574a6524643 \u003Cunknown>\n#8 0x5574a64f4d31 \u003Cunknown>\n#9 0x5574a64f579e \u003Cunknown>\n#10 0x5574a67a925b \u003Cunknown>\n#11 0x5574a67ad1f2 \u003Cunknown>\n#12 0x5574a6796615 \u003Cunknown>\n#13 0x5574a67add82 \u003Cunknown>\n#14 0x5574a677b25f \u003Cunknown>\n#15 0x5574a67d0e68 \u003Cunknown>\n#16 0x5574a67d1040 \u003Cunknown>\n#17 0x5574a67e049c \u003Cunknown>\n#18 0x7fc39ee94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: /usr/bin/google-chrome --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: "Google Chrome 129.0.6668.58 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 129.0.6668.58
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 129.0.6668.70
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 3723 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:54603/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:54603
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:54603 "POST /session HTTP/11" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x5635260476ca \u003Cunknown>\n#1 0x563525d18600 \u003Cunknown>\n#2 0x563525d5713c \u003Cunknown>\n#3 0x563525d560b2 \u003Cunknown>\n#4 0x563525d50f24 \u003Cunknown>\n#5 0x563525d4c2f8 \u003Cunknown>\n#6 0x563525d96ce8 \u003Cunknown>\n#7 0x563525d8a643 \u003Cunknown>\n#8 0x563525d5ad31 \u003Cunknown>\n#9 0x563525d5b79e \u003Cunknown>\n#10 0x56352600f25b \u003Cunknown>\n#11 0x5635260131f2 \u003Cunknown>\n#12 0x563525ffc615 \u003Cunknown>\n#13 0x563526013d82 \u003Cunknown>\n#14 0x563525fe125f \u003Cunknown>\n#15 0x563526036e68 \u003Cunknown>\n#16 0x563526037040 \u003Cunknown>\n#17 0x56352604649c \u003Cunknown>\n#18 0x7f2e9f294ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: /usr/bin/google-chrome --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: "Google Chrome 129.0.6668.58 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 129.0.6668.58
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 129.0.6668.70
+WARNING  selenium.webdriver.common.selenium_manager:selenium_manager.py:138 The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 4553 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:54995/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:54995
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:54995 "POST /session HTTP/11" 500 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x5640650b86ca \u003Cunknown>\n#1 0x564064d89600 \u003Cunknown>\n#2 0x564064dc813c \u003Cunknown>\n#3 0x564064dc70b2 \u003Cunknown>\n#4 0x564064dc1f24 \u003Cunknown>\n#5 0x564064dbd2f8 \u003Cunknown>\n#6 0x564064e07ce8 \u003Cunknown>\n#7 0x564064dfb643 \u003Cunknown>\n#8 0x564064dcbd31 \u003Cunknown>\n#9 0x564064dcc79e \u003Cunknown>\n#10 0x56406508025b \u003Cunknown>\n#11 0x5640650841f2 \u003Cunknown>\n#12 0x56406506d615 \u003Cunknown>\n#13 0x564065084d82 \u003Cunknown>\n#14 0x56406505225f \u003Cunknown>\n#15 0x5640650a7e68 \u003Cunknown>\n#16 0x5640650a8040 \u003Cunknown>\n#17 0x5640650b749c \u003Cunknown>\n#18 0x7f890be94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
