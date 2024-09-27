@@ -1,0 +1,104 @@
+2024-09-27 12:41:12 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-09-27 12:41:12 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-09-27 12:41:13 [DEBUG] Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "linux", arch: "x86_64", lang: "python", selenium_version: "4.24" }
+2024-09-27 12:41:13 [DEBUG] Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:13 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-09-27 12:41:13 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-09-27 12:41:13 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-09-27 12:41:13 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-09-27 12:41:13 [DEBUG] Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2024-09-27 12:41:13 [DEBUG] Required driver: chromedriver 129.0.6668.70
+2024-09-27 12:41:13 [WARNING] The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+2024-09-27 12:41:13 [DEBUG] Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:13 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-09-27 12:41:13 [DEBUG] Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 2460 using 0 to output -3
+2024-09-27 12:41:13 [DEBUG] POST http://localhost:35159/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-09-27 12:41:13 [DEBUG] Starting new HTTP connection (1): localhost:35159
+2024-09-27 12:41:13 [DEBUG] http://localhost:35159 "POST /session HTTP/11" 500 0
+2024-09-27 12:41:13 [DEBUG] Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x562bd29236ca \u003Cunknown>\n#1 0x562bd25f4600 \u003Cunknown>\n#2 0x562bd263313c \u003Cunknown>\n#3 0x562bd26320b2 \u003Cunknown>\n#4 0x562bd262cf24 \u003Cunknown>\n#5 0x562bd26282f8 \u003Cunknown>\n#6 0x562bd2672ce8 \u003Cunknown>\n#7 0x562bd2666643 \u003Cunknown>\n#8 0x562bd2636d31 \u003Cunknown>\n#9 0x562bd263779e \u003Cunknown>\n#10 0x562bd28eb25b \u003Cunknown>\n#11 0x562bd28ef1f2 \u003Cunknown>\n#12 0x562bd28d8615 \u003Cunknown>\n#13 0x562bd28efd82 \u003Cunknown>\n#14 0x562bd28bd25f \u003Cunknown>\n#15 0x562bd2912e68 \u003Cunknown>\n#16 0x562bd2913040 \u003Cunknown>\n#17 0x562bd292249c \u003Cunknown>\n#18 0x7f8a11c94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-27 12:41:13 [DEBUG] Finished Request
+2024-09-27 12:41:19 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-09-27 12:41:19 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-09-27 12:41:19 [DEBUG] Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:19 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-09-27 12:41:19 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-09-27 12:41:19 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-09-27 12:41:19 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-09-27 12:41:19 [DEBUG] Required driver: chromedriver 129.0.6668.70
+2024-09-27 12:41:19 [WARNING] The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+2024-09-27 12:41:19 [DEBUG] Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:19 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-09-27 12:41:19 [DEBUG] Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 2924 using 0 to output -3
+2024-09-27 12:41:19 [DEBUG] POST http://localhost:52433/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-09-27 12:41:19 [DEBUG] Starting new HTTP connection (1): localhost:52433
+2024-09-27 12:41:19 [DEBUG] http://localhost:52433 "POST /session HTTP/11" 500 0
+2024-09-27 12:41:19 [DEBUG] Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x557d924336ca \u003Cunknown>\n#1 0x557d92104600 \u003Cunknown>\n#2 0x557d9214313c \u003Cunknown>\n#3 0x557d921420b2 \u003Cunknown>\n#4 0x557d9213cf24 \u003Cunknown>\n#5 0x557d921382f8 \u003Cunknown>\n#6 0x557d92182ce8 \u003Cunknown>\n#7 0x557d92176643 \u003Cunknown>\n#8 0x557d92146d31 \u003Cunknown>\n#9 0x557d9214779e \u003Cunknown>\n#10 0x557d923fb25b \u003Cunknown>\n#11 0x557d923ff1f2 \u003Cunknown>\n#12 0x557d923e8615 \u003Cunknown>\n#13 0x557d923ffd82 \u003Cunknown>\n#14 0x557d923cd25f \u003Cunknown>\n#15 0x557d92422e68 \u003Cunknown>\n#16 0x557d92423040 \u003Cunknown>\n#17 0x557d9243249c \u003Cunknown>\n#18 0x7fac2fc94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-27 12:41:19 [DEBUG] Finished Request
+2024-09-27 12:41:24 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-09-27 12:41:24 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-09-27 12:41:24 [DEBUG] Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:24 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-09-27 12:41:24 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-09-27 12:41:24 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-09-27 12:41:24 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-09-27 12:41:24 [DEBUG] Required driver: chromedriver 129.0.6668.70
+2024-09-27 12:41:24 [WARNING] The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+2024-09-27 12:41:24 [DEBUG] Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:24 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-09-27 12:41:24 [DEBUG] Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 3377 using 0 to output -3
+2024-09-27 12:41:24 [DEBUG] POST http://localhost:37901/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-09-27 12:41:24 [DEBUG] Starting new HTTP connection (1): localhost:37901
+2024-09-27 12:41:25 [DEBUG] http://localhost:37901 "POST /session HTTP/11" 500 0
+2024-09-27 12:41:25 [DEBUG] Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x56491bbe46ca \u003Cunknown>\n#1 0x56491b8b5600 \u003Cunknown>\n#2 0x56491b8f413c \u003Cunknown>\n#3 0x56491b8f30b2 \u003Cunknown>\n#4 0x56491b8edf24 \u003Cunknown>\n#5 0x56491b8e92f8 \u003Cunknown>\n#6 0x56491b933ce8 \u003Cunknown>\n#7 0x56491b927643 \u003Cunknown>\n#8 0x56491b8f7d31 \u003Cunknown>\n#9 0x56491b8f879e \u003Cunknown>\n#10 0x56491bbac25b \u003Cunknown>\n#11 0x56491bbb01f2 \u003Cunknown>\n#12 0x56491bb99615 \u003Cunknown>\n#13 0x56491bbb0d82 \u003Cunknown>\n#14 0x56491bb7e25f \u003Cunknown>\n#15 0x56491bbd3e68 \u003Cunknown>\n#16 0x56491bbd4040 \u003Cunknown>\n#17 0x56491bbe349c \u003Cunknown>\n#18 0x7fa16ac94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-27 12:41:25 [DEBUG] Finished Request
+2024-09-27 12:41:30 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-09-27 12:41:30 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-09-27 12:41:30 [DEBUG] Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:30 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-09-27 12:41:30 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-09-27 12:41:30 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-09-27 12:41:30 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-09-27 12:41:30 [DEBUG] Required driver: chromedriver 129.0.6668.70
+2024-09-27 12:41:30 [WARNING] The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+2024-09-27 12:41:30 [DEBUG] Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:30 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-09-27 12:41:30 [DEBUG] Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 3842 using 0 to output -3
+2024-09-27 12:41:30 [DEBUG] POST http://localhost:40077/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-09-27 12:41:30 [DEBUG] Starting new HTTP connection (1): localhost:40077
+2024-09-27 12:41:30 [DEBUG] http://localhost:40077 "POST /session HTTP/11" 500 0
+2024-09-27 12:41:30 [DEBUG] Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x55a8fd9536ca \u003Cunknown>\n#1 0x55a8fd624600 \u003Cunknown>\n#2 0x55a8fd66313c \u003Cunknown>\n#3 0x55a8fd6620b2 \u003Cunknown>\n#4 0x55a8fd65cf24 \u003Cunknown>\n#5 0x55a8fd6582f8 \u003Cunknown>\n#6 0x55a8fd6a2ce8 \u003Cunknown>\n#7 0x55a8fd696643 \u003Cunknown>\n#8 0x55a8fd666d31 \u003Cunknown>\n#9 0x55a8fd66779e \u003Cunknown>\n#10 0x55a8fd91b25b \u003Cunknown>\n#11 0x55a8fd91f1f2 \u003Cunknown>\n#12 0x55a8fd908615 \u003Cunknown>\n#13 0x55a8fd91fd82 \u003Cunknown>\n#14 0x55a8fd8ed25f \u003Cunknown>\n#15 0x55a8fd942e68 \u003Cunknown>\n#16 0x55a8fd943040 \u003Cunknown>\n#17 0x55a8fd95249c \u003Cunknown>\n#18 0x7fb7c9094ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-27 12:41:30 [DEBUG] Finished Request
+2024-09-27 12:41:35 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-09-27 12:41:35 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-09-27 12:41:36 [DEBUG] Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:36 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-09-27 12:41:36 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-09-27 12:41:36 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-09-27 12:41:36 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-09-27 12:41:36 [DEBUG] Required driver: chromedriver 129.0.6668.70
+2024-09-27 12:41:36 [WARNING] The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+2024-09-27 12:41:36 [DEBUG] Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:36 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-09-27 12:41:36 [DEBUG] Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 4312 using 0 to output -3
+2024-09-27 12:41:36 [DEBUG] POST http://localhost:60203/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-09-27 12:41:36 [DEBUG] Starting new HTTP connection (1): localhost:60203
+2024-09-27 12:41:36 [DEBUG] http://localhost:60203 "POST /session HTTP/11" 500 0
+2024-09-27 12:41:36 [DEBUG] Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x5632c307c6ca \u003Cunknown>\n#1 0x5632c2d4d600 \u003Cunknown>\n#2 0x5632c2d8c13c \u003Cunknown>\n#3 0x5632c2d8b0b2 \u003Cunknown>\n#4 0x5632c2d85f24 \u003Cunknown>\n#5 0x5632c2d812f8 \u003Cunknown>\n#6 0x5632c2dcbce8 \u003Cunknown>\n#7 0x5632c2dbf643 \u003Cunknown>\n#8 0x5632c2d8fd31 \u003Cunknown>\n#9 0x5632c2d9079e \u003Cunknown>\n#10 0x5632c304425b \u003Cunknown>\n#11 0x5632c30481f2 \u003Cunknown>\n#12 0x5632c3031615 \u003Cunknown>\n#13 0x5632c3048d82 \u003Cunknown>\n#14 0x5632c301625f \u003Cunknown>\n#15 0x5632c306be68 \u003Cunknown>\n#16 0x5632c306c040 \u003Cunknown>\n#17 0x5632c307b49c \u003Cunknown>\n#18 0x7fb546c94ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-27 12:41:36 [DEBUG] Finished Request
+2024-09-27 12:41:41 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-09-27 12:41:41 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-09-27 12:41:41 [DEBUG] Found chromedriver 127.0.6533.119 in PATH: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:41 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-09-27 12:41:41 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-09-27 12:41:41 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-09-27 12:41:41 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-09-27 12:41:41 [DEBUG] Required driver: chromedriver 129.0.6668.70
+2024-09-27 12:41:41 [WARNING] The chromedriver version (127.0.6533.119) detected in PATH at /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver might not be compatible with the detected chrome version (129.0.6668.58); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry
+2024-09-27 12:41:41 [DEBUG] Driver path: /opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver
+2024-09-27 12:41:41 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-09-27 12:41:41 [DEBUG] Started executable: `/opt/hostedtoolcache/setup-chrome/chromedriver/127.0.6533.119/x64/chromedriver` in a child process with pid: 4739 using 0 to output -3
+2024-09-27 12:41:41 [DEBUG] POST http://localhost:44535/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-09-27 12:41:41 [DEBUG] Starting new HTTP connection (1): localhost:44535
+2024-09-27 12:41:42 [DEBUG] http://localhost:44535 "POST /session HTTP/11" 500 0
+2024-09-27 12:41:42 [DEBUG] Remote response: status=500 | data={"value":{"error":"session not created","message":"session not created: This version of ChromeDriver only supports Chrome version 127\nCurrent browser version is 129.0.6668.58 with binary path /usr/bin/google-chrome","stacktrace":"#0 0x55b8340f06ca \u003Cunknown>\n#1 0x55b833dc1600 \u003Cunknown>\n#2 0x55b833e0013c \u003Cunknown>\n#3 0x55b833dff0b2 \u003Cunknown>\n#4 0x55b833df9f24 \u003Cunknown>\n#5 0x55b833df52f8 \u003Cunknown>\n#6 0x55b833e3fce8 \u003Cunknown>\n#7 0x55b833e33643 \u003Cunknown>\n#8 0x55b833e03d31 \u003Cunknown>\n#9 0x55b833e0479e \u003Cunknown>\n#10 0x55b8340b825b \u003Cunknown>\n#11 0x55b8340bc1f2 \u003Cunknown>\n#12 0x55b8340a5615 \u003Cunknown>\n#13 0x55b8340bcd82 \u003Cunknown>\n#14 0x55b83408a25f \u003Cunknown>\n#15 0x55b8340dfe68 \u003Cunknown>\n#16 0x55b8340e0040 \u003Cunknown>\n#17 0x55b8340ef49c \u003Cunknown>\n#18 0x7f9cbd694ac3 \u003Cunknown>\n"}} | headers=HTTPHeaderDict({'Content-Length': '889', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-09-27 12:41:42 [DEBUG] Finished Request
