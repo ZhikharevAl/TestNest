@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Wed Sep 25 09:53:05 GMT 2024","Wed Sep 25 09:53:05 GMT 2024","35","tests.api","test_api","TestEntityAPI","","","Test get all entities","Verify that all entities can be retrieved"
-"broken","Wed Sep 25 09:52:15 GMT 2024","Wed Sep 25 09:52:15 GMT 2024","0","tests.api","test_api","TestEntityAPI","","","Test create entity","Verify that an entity can be created successfully"
-"broken","Wed Sep 25 09:52:40 GMT 2024","Wed Sep 25 09:52:40 GMT 2024","0","tests.api","test_api","TestEntityAPI","","","Test get entity","Verify that a specific entity can be retrieved"

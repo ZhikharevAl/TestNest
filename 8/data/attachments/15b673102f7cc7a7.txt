@@ -1,8 +1,0 @@
-2024-09-25 09:52:40 [DEBUG] Starting new HTTPS connection (1): a031-95-32-133-30.ngrok-free.app:443
-2024-09-25 09:52:40 [DEBUG] https://a031-95-32-133-30.ngrok-free.app:443 "GET /api/getAll HTTP/11" 404 None
-2024-09-25 09:52:45 [DEBUG] Starting new HTTPS connection (1): a031-95-32-133-30.ngrok-free.app:443
-2024-09-25 09:52:45 [DEBUG] https://a031-95-32-133-30.ngrok-free.app:443 "GET /api/getAll HTTP/11" 404 None
-2024-09-25 09:52:50 [DEBUG] Starting new HTTPS connection (1): a031-95-32-133-30.ngrok-free.app:443
-2024-09-25 09:52:50 [DEBUG] https://a031-95-32-133-30.ngrok-free.app:443 "GET /api/getAll HTTP/11" 404 None
-2024-09-25 09:52:55 [DEBUG] Starting new HTTPS connection (1): a031-95-32-133-30.ngrok-free.app:443
-2024-09-25 09:52:55 [DEBUG] https://a031-95-32-133-30.ngrok-free.app:443 "GET /api/getAll HTTP/11" 404 None
