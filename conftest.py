@@ -1,3 +1,5 @@
+import logging
+
 import allure
 import pytest
 from _pytest.reports import TestReport
@@ -66,3 +68,13 @@ def pytest_runtest_makereport(item: pytest.Item) -> TestReport:
     outcome = yield
     rep = outcome.get_result()
     setattr(item, "rep_" + rep.when, rep)
+
+
+def pytest_configure() -> None:
+    """Log configuration."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+    logging.getLogger("faker").setLevel(logging.WARNING)
