@@ -1,20 +1,19 @@
 import allure
 import pytest
-from selenium.webdriver.chrome.webdriver import WebDriver
 
 from data.generators import create_customers
 from pages.add_customer_page import AddCustomerPage
-from utils.ui.helper import verify_customer_addition
+from utils.ui.helper import Helper
 
 
 @allure.epic("Customer Management")
 @allure.feature("Add Customer")
 @allure.description_html("""
 <h2>Testing Customer Registration in XYZ Bank</h2>
-<p>This test suite verifies the functionality of adding customer
+<p>This test suite verifies the functionality of adding customers
             to the XYZ Bank system, including:</p>
 <ul>
-    <li>Generating test data for customer</li>
+    <li>Generating test data for customers</li>
     <li>Opening the Add Customer page</li>
     <li>Filling in the customer information (First Name, Last Name, Post Code)</li>
     <li>Submitting the registration form</li>
@@ -35,17 +34,22 @@ class TestAddCustomer:
     @allure.severity(allure.severity_level.CRITICAL)
     @pytest.mark.smoke
     @pytest.mark.ui
-    def test_add_customer(self, browser: WebDriver) -> None:
+    def test_add_customer(
+        self, add_customer_page: AddCustomerPage, helper: Helper
+    ) -> None:
         """Test adding a new customer with valid data."""
-        self.customer = create_customers(1)[0]
-        self.customer_page = AddCustomerPage(browser)
-        self.customer_page.open_page()
+        customer = create_customers(1)[0]
+        add_customer_page.open_page()
+
         assert (
-            self.customer_page.is_page_loaded()
+            add_customer_page.is_page_loaded()
         ), "The page for adding customers has not been opened"
-        self.customer_page.add_customer(
-            self.customer.first_name,
-            self.customer.last_name,
-            self.customer.post_code,
+
+        add_customer_page.add_customer(
+            customer.first_name,
+            customer.last_name,
+            customer.post_code,
         )
-        verify_customer_addition(browser)
+
+        helper.wait_for_alert()
+        helper.verify_customer_addition()

@@ -7,6 +7,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.webdriver import WebDriver
 
+from pages.add_customer_page import AddCustomerPage
+from utils.ui.helper import Helper
+
 
 @pytest.fixture
 def browser() -> WebDriver:
@@ -24,6 +27,18 @@ def browser() -> WebDriver:
 
     yield driver
     driver.quit()
+
+
+@pytest.fixture
+def helper(browser: WebDriver) -> Helper:
+    """Fixture to provide a Helper instance."""
+    return Helper(browser)
+
+
+@pytest.fixture
+def add_customer_page(browser: WebDriver) -> AddCustomerPage:
+    """Fixture to provide an AddCustomerPage instance."""
+    return AddCustomerPage(browser)
 
 
 @pytest.fixture(autouse=True)
