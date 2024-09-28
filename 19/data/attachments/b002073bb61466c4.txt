@@ -1,0 +1,8 @@
+2024-09-28 03:33:03 [DEBUG] Starting new HTTPS connection (1): 24ce-95-32-200-143.ngrok-free.app:443
+2024-09-28 03:33:04 [DEBUG] https://24ce-95-32-200-143.ngrok-free.app:443 "POST /api/create HTTP/11" 200 3
+2024-09-28 03:33:04 [DEBUG] Starting new HTTPS connection (1): 24ce-95-32-200-143.ngrok-free.app:443
+2024-09-28 03:33:04 [DEBUG] https://24ce-95-32-200-143.ngrok-free.app:443 "DELETE /api/delete/232 HTTP/11" 204 0
+2024-09-28 03:33:04 [DEBUG] Starting new HTTPS connection (1): 24ce-95-32-200-143.ngrok-free.app:443
+2024-09-28 03:33:04 [DEBUG] https://24ce-95-32-200-143.ngrok-free.app:443 "GET /api/get/232 HTTP/11" 500 33
+2024-09-28 03:33:04 [DEBUG] Starting new HTTPS connection (1): 24ce-95-32-200-143.ngrok-free.app:443
+2024-09-28 03:33:05 [DEBUG] https://24ce-95-32-200-143.ngrok-free.app:443 "GET /api/getall/ HTTP/11" 200 7930

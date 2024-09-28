@@ -1,0 +1,15 @@
+{
+    "id": 230,
+    "title": "Gas.",
+    "verified": false,
+    "addition": {
+        "id": 230,
+        "additional_info": "Real sure.",
+        "additional_number": 271
+    },
+    "important_numbers": [
+        58,
+        45,
+        56
+    ]
+}

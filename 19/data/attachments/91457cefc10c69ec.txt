@@ -1,0 +1,15 @@
+{
+    "id": 229,
+    "title": "Crime card.",
+    "verified": false,
+    "addition": {
+        "id": 229,
+        "additional_info": "Particularly heavy.",
+        "additional_number": 74
+    },
+    "important_numbers": [
+        84,
+        27,
+        76
+    ]
+}

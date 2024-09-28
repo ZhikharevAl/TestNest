@@ -1,0 +1,15 @@
+{
+    "id": 231,
+    "title": "Quality marriage.",
+    "verified": false,
+    "addition": {
+        "id": 231,
+        "additional_info": "Pattern.",
+        "additional_number": 70
+    },
+    "important_numbers": [
+        24,
+        89,
+        39
+    ]
+}
