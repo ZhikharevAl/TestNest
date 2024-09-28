@@ -32,3 +32,8 @@ class AllureUtils:
             name="Headers",
             attachment_type=AttachmentType.TEXT,
         )
+        allure.attach(
+            body=str(response.url),
+            name="URL",
+            attachment_type=AttachmentType.TEXT,
+        )
