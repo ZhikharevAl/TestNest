@@ -5,7 +5,10 @@ from selenium.webdriver.remote.webelement import WebElement
 
 from config.config import CUSTOMER_LIST_URL
 from pages.base_page import BasePage
-from utils import find_name_closest_to_average_length, get_average_name_length
+from utils.ui.statistics_utils import (
+    find_name_closest_to_average_length,
+    get_average_name_length,
+)
 
 
 class CustomerListPage(BasePage):

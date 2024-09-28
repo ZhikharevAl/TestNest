@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 
 from data.generators import create_customers
 from pages.add_customer_page import AddCustomerPage
+from utils.ui.helper import verify_customer_addition
 
 
 @allure.epic("Customer Management")
@@ -47,4 +48,4 @@ class TestAddCustomer:
             self.customer.last_name,
             self.customer.post_code,
         )
-        self.customer_page.verify()
+        verify_customer_addition(browser)

@@ -90,22 +90,3 @@ class AddCustomerPage(BasePage):
         """Accept the alert."""
         alert = self.browser.switch_to.alert
         alert.accept()
-
-    @allure.step("Verify customer addition")
-    def verify(self) -> None:
-        """Verify the success message after adding a customer.
-
-        Raises:
-            AssertionError: If the success message is not as expected
-        """
-        alert_text = self.get_alert_text()
-        assert (
-            "Customer added successfully" in alert_text
-        ), f"Unexpected alert message: {alert_text}"
-        self.accept_alert()
-
-        allure.attach(
-            f"Alert Text: {alert_text}",
-            name="customer_addition_result",
-            attachment_type=allure.attachment_type.TEXT,
-        )
