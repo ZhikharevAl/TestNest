@@ -15,7 +15,7 @@ def api_client() -> APIClient:
 @pytest.fixture
 def entity_id(api_client: APIClient) -> str:
     """Fixture to create and yield a new entity ID."""
-    entity_id = api_client.create_entity()
+    entity_id = api_client.create_entity().text
     yield entity_id
     api_client.delete_entity(entity_id)
 
