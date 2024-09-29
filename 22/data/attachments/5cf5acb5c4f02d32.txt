@@ -1,0 +1,15 @@
+{
+    "id": 94,
+    "title": "Environmental probably.",
+    "verified": false,
+    "addition": {
+        "id": 94,
+        "additional_info": "Half according charge month.",
+        "additional_number": 257
+    },
+    "important_numbers": [
+        15,
+        42,
+        59
+    ]
+}

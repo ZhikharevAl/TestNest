@@ -1,0 +1,15 @@
+{
+    "id": 98,
+    "title": "Senior.",
+    "verified": true,
+    "addition": {
+        "id": 98,
+        "additional_info": "Article stage voice.",
+        "additional_number": 106
+    },
+    "important_numbers": [
+        27,
+        16,
+        23
+    ]
+}

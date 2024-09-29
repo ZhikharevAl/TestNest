@@ -1,0 +1,15 @@
+{
+    "id": 96,
+    "title": "Clearly road.",
+    "verified": true,
+    "addition": {
+        "id": 96,
+        "additional_info": "Modern rich.",
+        "additional_number": 528
+    },
+    "important_numbers": [
+        4,
+        3,
+        60
+    ]
+}

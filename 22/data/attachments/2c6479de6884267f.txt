@@ -1,0 +1,15 @@
+{
+    "id": 95,
+    "title": "Of.",
+    "verified": true,
+    "addition": {
+        "id": 95,
+        "additional_info": "Try growth.",
+        "additional_number": 627
+    },
+    "important_numbers": [
+        58,
+        43,
+        84
+    ]
+}

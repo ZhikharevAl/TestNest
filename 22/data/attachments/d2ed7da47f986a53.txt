@@ -1,0 +1,15 @@
+{
+    "id": 93,
+    "title": "Far no.",
+    "verified": true,
+    "addition": {
+        "id": 93,
+        "additional_info": "Remain include top.",
+        "additional_number": 81
+    },
+    "important_numbers": [
+        43,
+        93,
+        20
+    ]
+}
