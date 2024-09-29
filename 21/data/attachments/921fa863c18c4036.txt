@@ -1,0 +1,15 @@
+{
+    "id": 101,
+    "title": "Style.",
+    "verified": false,
+    "addition": {
+        "id": 101,
+        "additional_info": "Century ten Mr from.",
+        "additional_number": 531
+    },
+    "important_numbers": [
+        60,
+        19,
+        32
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": 100,
+    "title": "High evidence.",
+    "verified": true,
+    "addition": {
+        "id": 100,
+        "additional_info": "Want structure.",
+        "additional_number": 946
+    },
+    "important_numbers": [
+        75,
+        32,
+        56
+    ]
+}

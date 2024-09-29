@@ -1,0 +1,15 @@
+{
+    "id": 104,
+    "title": "Experience.",
+    "verified": true,
+    "addition": {
+        "id": 104,
+        "additional_info": "Instead near short mouth.",
+        "additional_number": 659
+    },
+    "important_numbers": [
+        75,
+        87,
+        88
+    ]
+}

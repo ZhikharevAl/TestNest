@@ -1,0 +1,21 @@
+2024-09-29 18:15:27 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:27 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "POST /api/create HTTP/11" 200 3
+2024-09-29 18:15:27 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:28 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "GET /api/get/105 HTTP/11" 200 170
+2024-09-29 18:15:28 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:28 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "DELETE /api/delete/105 HTTP/11" 204 0
+2024-09-29 18:15:28 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:28 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "GET /api/get/105 HTTP/11" 500 33
+2024-09-29 18:15:28 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:29 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "GET /api/getall/ HTTP/11" 200 4344
+2024-09-29 18:15:29 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:29 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "DELETE /api/delete/105 HTTP/11" 500 37
+2024-09-29 18:15:29 [ERROR] Failed to delete entity 105: 500 Server Error: Internal Server Error for url: https://2e6c-95-32-200-143.ngrok-free.app/api/delete/105
+Traceback (most recent call last):
+  File "/home/runner/work/TestNest/TestNest/conftest.py", line 36, in create_and_delete_entity
+    entity_service.delete_entity(str(entity.id))
+  File "/home/runner/work/TestNest/TestNest/services/entity/entity_service.py", line 60, in delete_entity
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://2e6c-95-32-200-143.ngrok-free.app/api/delete/105

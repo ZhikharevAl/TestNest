@@ -1,0 +1,15 @@
+{
+    "id": 105,
+    "title": "Majority street.",
+    "verified": false,
+    "addition": {
+        "id": 105,
+        "additional_info": "Back dream single.",
+        "additional_number": 235
+    },
+    "important_numbers": [
+        14,
+        58,
+        21
+    ]
+}

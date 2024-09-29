@@ -1,0 +1,15 @@
+{
+    "id": 104,
+    "title": "Tree.",
+    "verified": false,
+    "addition": {
+        "id": 104,
+        "additional_info": "Activity mother.",
+        "additional_number": 977
+    },
+    "important_numbers": [
+        52,
+        47,
+        90
+    ]
+}

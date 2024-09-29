@@ -1,0 +1,15 @@
+{
+    "id": 102,
+    "title": "Arm.",
+    "verified": true,
+    "addition": {
+        "id": 102,
+        "additional_info": "Mission partner least.",
+        "additional_number": 263
+    },
+    "important_numbers": [
+        79,
+        94,
+        75
+    ]
+}

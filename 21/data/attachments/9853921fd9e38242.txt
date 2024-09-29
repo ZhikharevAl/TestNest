@@ -1,0 +1,8 @@
+2024-09-29 18:15:26 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:26 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "POST /api/create HTTP/11" 200 3
+2024-09-29 18:15:26 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:26 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "GET /api/get/104 HTTP/11" 200 171
+2024-09-29 18:15:26 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:27 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "PATCH /api/patch/104 HTTP/11" 204 0
+2024-09-29 18:15:27 [DEBUG] Starting new HTTPS connection (1): 2e6c-95-32-200-143.ngrok-free.app:443
+2024-09-29 18:15:27 [DEBUG] https://2e6c-95-32-200-143.ngrok-free.app:443 "GET /api/get/104 HTTP/11" 200 157

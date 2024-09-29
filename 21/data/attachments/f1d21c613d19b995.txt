@@ -1,0 +1,15 @@
+{
+    "id": 99,
+    "title": "Close.",
+    "verified": false,
+    "addition": {
+        "id": 99,
+        "additional_info": "Knowledge manager but.",
+        "additional_number": 74
+    },
+    "important_numbers": [
+        87,
+        87,
+        91
+    ]
+}
