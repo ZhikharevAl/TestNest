@@ -24,12 +24,13 @@ jobs:
       - name: Set up Chrome
         uses: browser-actions/setup-chrome@v1
         with:
-          chrome-version: '127'
+          chrome-version: '129'
+
           install-chromedriver: true
 
       - name: Run tests
         run: |
-          pytest --alluredir=allure-results
+          pytest -m ui --alluredir=allure-results
 
       - uses: actions/upload-artifact@master
         with:
