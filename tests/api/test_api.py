@@ -149,8 +149,8 @@ class TestEntityAPI:
             with pytest.raises(HTTPError) as excinfo:
                 entity_service.get_entity(str(created_entity.id))
 
-            assert excinfo.value.response.status_code in [404, 500], (
-                f"Expected status 404 or 500, but got: "
+            assert excinfo.value.response.status_code == 500, (
+                f"Expected status 500, but got: "
                 f"{excinfo.value.response.status_code}"
             )
 
