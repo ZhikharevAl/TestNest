@@ -1,2 +1,2 @@
-BASE_URL = "http://localhost:8080"  # change to your ngrok url
+BASE_URL = "https://2e6c-95-32-200-143.ngrok-free.app"  # change to your ngrok url
 TIMEOUT = 10
