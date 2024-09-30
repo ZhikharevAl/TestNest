@@ -105,6 +105,10 @@ pytest -m api
 pytest --alluredir=./allure-results
 allure serve ./allure-results
 ```
+![Screenshot 2024-09-30 025738](https://github.com/user-attachments/assets/58ee49fb-d1ca-42f1-948d-4ae276410437)
+
+![Screenshot 2024-09-30 032136](https://github.com/user-attachments/assets/e8fd587f-3f0c-4d27-b32f-11d24fe129fc)
+
 
 ## Структура отчетов
 
