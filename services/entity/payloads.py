@@ -2,7 +2,7 @@ from typing import Any
 
 from faker import Faker
 
-from services.entity.models.entity_model import AdditionRequest, EntityRequest
+from services.entity.models.entity_model import EntityRequest
 
 fake = Faker()
 
@@ -37,9 +37,4 @@ class Payloads:
                 "additional_number": fake.random_int(min=1, max=1000),
             }
 
-        return EntityRequest(
-            title=payload["title"],
-            verified=payload["verified"],
-            important_numbers=payload["important_numbers"],
-            addition=AdditionRequest(**payload["addition"]),
-        )
+        return EntityRequest(**payload)
