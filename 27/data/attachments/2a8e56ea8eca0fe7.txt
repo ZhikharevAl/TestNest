@@ -1,0 +1,15 @@
+{
+    "id": 179,
+    "title": "War.",
+    "verified": false,
+    "addition": {
+        "id": 179,
+        "additional_info": "Unit specific.",
+        "additional_number": 856
+    },
+    "important_numbers": [
+        42,
+        74,
+        32
+    ]
+}

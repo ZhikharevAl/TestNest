@@ -1,0 +1,15 @@
+{
+    "id": 180,
+    "title": "Measure several.",
+    "verified": false,
+    "addition": {
+        "id": 180,
+        "additional_info": "Window and.",
+        "additional_number": 105
+    },
+    "important_numbers": [
+        86,
+        55,
+        9
+    ]
+}

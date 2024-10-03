@@ -1,0 +1,15 @@
+{
+    "id": 178,
+    "title": "I.",
+    "verified": true,
+    "addition": {
+        "id": 178,
+        "additional_info": "Million federal.",
+        "additional_number": 86
+    },
+    "important_numbers": [
+        6,
+        47,
+        23
+    ]
+}

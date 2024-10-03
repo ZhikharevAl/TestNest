@@ -1,0 +1,15 @@
+{
+    "id": 177,
+    "title": "Fight charge.",
+    "verified": true,
+    "addition": {
+        "id": 177,
+        "additional_info": "Organization score.",
+        "additional_number": 358
+    },
+    "important_numbers": [
+        100,
+        62,
+        28
+    ]
+}
