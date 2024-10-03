@@ -1,0 +1,15 @@
+{
+    "id": 220,
+    "title": "Bill paper.",
+    "verified": false,
+    "addition": {
+        "id": 220,
+        "additional_info": "Discover finally.",
+        "additional_number": 507
+    },
+    "important_numbers": [
+        59,
+        93,
+        44
+    ]
+}

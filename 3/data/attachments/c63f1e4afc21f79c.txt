@@ -1,0 +1,15 @@
+{
+    "id": 224,
+    "title": "Family teacher.",
+    "verified": true,
+    "addition": {
+        "id": 224,
+        "additional_info": "Letter within agree.",
+        "additional_number": 424
+    },
+    "important_numbers": [
+        100,
+        87,
+        71
+    ]
+}

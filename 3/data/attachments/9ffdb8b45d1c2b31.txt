@@ -1,0 +1,15 @@
+{
+    "id": 221,
+    "title": "Thing.",
+    "verified": false,
+    "addition": {
+        "id": 221,
+        "additional_info": "Special rather.",
+        "additional_number": 585
+    },
+    "important_numbers": [
+        34,
+        45,
+        74
+    ]
+}

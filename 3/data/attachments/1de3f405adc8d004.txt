@@ -1,0 +1,15 @@
+{
+    "id": 225,
+    "title": "Vote.",
+    "verified": true,
+    "addition": {
+        "id": 225,
+        "additional_info": "Whom perform.",
+        "additional_number": 180
+    },
+    "important_numbers": [
+        68,
+        40,
+        69
+    ]
+}
