@@ -30,7 +30,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -m ui --alluredir=allure-results
+          pytest -m ui -n auto --alluredir=allure-results
 
       - uses: actions/upload-artifact@master
         with:
