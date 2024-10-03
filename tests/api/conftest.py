@@ -1,5 +1,4 @@
 import logging
-from typing import List
 
 import pytest
 
@@ -23,7 +22,7 @@ def entity_service(api_client: APIClient) -> EntityService:
 
 @pytest.fixture
 def new_entity(entity_service: EntityService) -> EntityResponse:
-    """Fixture to create a new entity and return its data, deleting it after the test."""
+    """Fixture to create a new entity, return its data, deleting it after the test."""
     _, entity = entity_service.create_entity()
     yield entity
     try:
@@ -34,8 +33,8 @@ def new_entity(entity_service: EntityService) -> EntityResponse:
 
 
 @pytest.fixture
-def upload_three_entities(entity_service: EntityService) -> List[EntityResponse]:
-    """Fixture to create three new entities and return their data, deleting them after the test."""
+def upload_three_entities(entity_service: EntityService) -> list[EntityResponse]:
+    """Fixture to create 3 new entities, return data, deleting them after the test."""
     entities = []
     for _ in range(3):
         _, entity = entity_service.create_entity()
