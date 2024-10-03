@@ -1,5 +1,0 @@
-"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"Entity Management","CRUD Operations","","0","0","5","0","0"
-"Customer Management","Customer List","Sort customers by first name","0","0","2","0","0"
-"Customer Management","Add Customer","Add a new customer with valid data","0","0","1","0","0"
-"Customer Management","Delete Customer","Delete customer with average name length","0","0","1","0","0"
