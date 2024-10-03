@@ -1,0 +1,15 @@
+{
+    "id": 157,
+    "title": "Factor quickly.",
+    "verified": false,
+    "addition": {
+        "id": 157,
+        "additional_info": "Direction standard.",
+        "additional_number": 862
+    },
+    "important_numbers": [
+        81,
+        9,
+        44
+    ]
+}

@@ -1,4 +1,0 @@
-DEBUG    urllib3.connectionpool:connectionpool.py:1051 Starting new HTTPS connection (1): 0261-95-32-200-143.ngrok-free.app:443
-DEBUG    urllib3.connectionpool:connectionpool.py:546 https://0261-95-32-200-143.ngrok-free.app:443 "POST /api/create HTTP/11" 200 2
-DEBUG    urllib3.connectionpool:connectionpool.py:1051 Starting new HTTPS connection (1): 0261-95-32-200-143.ngrok-free.app:443
-DEBUG    urllib3.connectionpool:connectionpool.py:546 https://0261-95-32-200-143.ngrok-free.app:443 "DELETE /api/delete/28 HTTP/11" 204 0

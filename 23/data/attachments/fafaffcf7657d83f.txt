@@ -1,0 +1,15 @@
+{
+    "id": 161,
+    "title": "Support structure.",
+    "verified": true,
+    "addition": {
+        "id": 161,
+        "additional_info": "Leader me weight.",
+        "additional_number": 922
+    },
+    "important_numbers": [
+        21,
+        6,
+        98
+    ]
+}
