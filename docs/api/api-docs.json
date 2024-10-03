@@ -1,0 +1,338 @@
+{
+    "schemes": [],
+    "swagger": "2.0",
+    "info": {
+        "description": "",
+        "title": "",
+        "contact": {},
+        "version": ""
+    },
+    "host": "",
+    "basePath": "",
+    "paths": {
+        "/api/create": {
+            "post": {
+                "description": "Запрос на добавление новой сущности",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain"
+                ],
+                "tags": [
+                    "Entity"
+                ],
+                "summary": "Создание сущности",
+                "parameters": [
+                    {
+                        "description": "Сущность",
+                        "name": "message",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.EntityRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Номер созданной сущности",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/delete/{id}": {
+            "delete": {
+                "description": "Запрос на удаление сущности и ее дополнений",
+                "produces": [
+                    "text/plain"
+                ],
+                "tags": [
+                    "Entity"
+                ],
+                "summary": "Удаление сущности",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID сущности",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/get/{id}": {
+            "get": {
+                "description": "Запрос на получение одной сущности",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Entity"
+                ],
+                "summary": "Получить сущность",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID сущности",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/dto.EntityResponse"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/getAll": {
+            "get": {
+                "description": "Запрос на получение списка сущностей",
+                "consumes": [
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Entity"
+                ],
+                "summary": "Список сущностей",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "Заголовок",
+                        "name": "title",
+                        "in": "query"
+                    },
+                    {
+                        "type": "boolean",
+                        "description": "Подтверждено",
+                        "name": "verified",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Страница",
+                        "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "Элементов на странице",
+                        "name": "perPage",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/dto.EntityResponse"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        },
+        "/api/patch/{id}": {
+            "patch": {
+                "description": "Отправка событий",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "text/plain"
+                ],
+                "tags": [
+                    "Entity"
+                ],
+                "summary": "Обновление сущности и ее дополнений",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID сущности",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    },
+                    {
+                        "description": "Сущность",
+                        "name": "message",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/dto.EntityRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "No Content"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "500": {
+                        "description": "Internal Server Error"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "dto.AdditionRequest": {
+            "description": "Дополнительная информация о сущности.",
+            "type": "object",
+            "properties": {
+                "additional_info": {
+                    "description": "AdditionalInfo дополнительные сведения о сущности.",
+                    "type": "string",
+                    "example": "Дополнительные сведения"
+                },
+                "additional_number": {
+                    "description": "AdditionalNumber дополнительное число для сущности.",
+                    "type": "integer",
+                    "example": 123
+                }
+            }
+        },
+        "dto.AdditionResponse": {
+            "description": "Дополнительная информация о сущности.",
+            "type": "object",
+            "properties": {
+                "additional_info": {
+                    "description": "AdditionalInfo дополнительные сведения о сущности.",
+                    "type": "string",
+                    "example": "Дополнительные сведения"
+                },
+                "additional_number": {
+                    "description": "AdditionalNumber дополнительное число для сущности.",
+                    "type": "integer",
+                    "example": 123
+                },
+                "id": {
+                    "description": "ID идентификатор дополнительной информации.",
+                    "type": "integer",
+                    "example": 1
+                }
+            }
+        },
+        "dto.EntityRequest": {
+            "description": "Модель для отправки сущности.",
+            "type": "object",
+            "properties": {
+                "addition": {
+                    "description": "Addition дополнительная информация о событии.",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/dto.AdditionRequest"
+                        }
+                    ]
+                },
+                "important_numbers": {
+                    "description": "ImportantNumbers массив важных чисел для сущности.",
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "example": [
+                        42,
+                        87,
+                        15
+                    ]
+                },
+                "title": {
+                    "description": "Title заголовок сущности.",
+                    "type": "string",
+                    "example": "Заголовок сущности"
+                },
+                "verified": {
+                    "description": "Verified статус верификации сущности.",
+                    "type": "boolean",
+                    "example": true
+                }
+            }
+        },
+        "dto.EntityResponse": {
+            "type": "object",
+            "properties": {
+                "addition": {
+                    "description": "Addition дополнительная информация о сущности.",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/dto.AdditionResponse"
+                        }
+                    ]
+                },
+                "id": {
+                    "description": "ID идентификатор сущности.",
+                    "type": "integer",
+                    "example": 1
+                },
+                "important_numbers": {
+                    "description": "ImportantNumbers массив важных чисел для сущности.",
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "example": [
+                        42,
+                        87,
+                        15
+                    ]
+                },
+                "title": {
+                    "description": "Title заголовок сущности.",
+                    "type": "string",
+                    "example": "Заголовок сущности"
+                },
+                "verified": {
+                    "description": "Verified статус верификации сущности.",
+                    "type": "boolean",
+                    "example": true
+                }
+            }
+        }
+    }
+}
