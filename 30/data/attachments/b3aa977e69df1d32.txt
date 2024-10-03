@@ -1,0 +1,15 @@
+{
+    "id": 197,
+    "title": "Into trouble.",
+    "verified": true,
+    "addition": {
+        "id": 197,
+        "additional_info": "Challenge notice spring.",
+        "additional_number": 459
+    },
+    "important_numbers": [
+        19,
+        11,
+        70
+    ]
+}

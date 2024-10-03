@@ -1,0 +1,15 @@
+{
+    "id": 202,
+    "title": "Draw though.",
+    "verified": false,
+    "addition": {
+        "id": 202,
+        "additional_info": "Affect risk.",
+        "additional_number": 879
+    },
+    "important_numbers": [
+        8,
+        58,
+        35
+    ]
+}

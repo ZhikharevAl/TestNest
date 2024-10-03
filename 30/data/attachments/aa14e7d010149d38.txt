@@ -1,0 +1,15 @@
+{
+    "id": 193,
+    "title": "Among all.",
+    "verified": false,
+    "addition": {
+        "id": 193,
+        "additional_info": "Explain building occur.",
+        "additional_number": 551
+    },
+    "important_numbers": [
+        25,
+        30,
+        86
+    ]
+}

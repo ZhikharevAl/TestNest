@@ -1,0 +1,15 @@
+{
+    "id": 199,
+    "title": "Meeting body.",
+    "verified": true,
+    "addition": {
+        "id": 199,
+        "additional_info": "Lead like.",
+        "additional_number": 449
+    },
+    "important_numbers": [
+        36,
+        60,
+        48
+    ]
+}

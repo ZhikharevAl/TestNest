@@ -1,0 +1,34 @@
+2024-10-03 12:42:38 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-10-03 12:42:38 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-10-03 12:42:38 [DEBUG] Sending stats to Plausible: Props { browser: "chrome", browser_version: "", os: "linux", arch: "x86_64", lang: "python", selenium_version: "4.24" }
+2024-10-03 12:42:38 [DEBUG] Found chromedriver 129.0.6668.58 in PATH: /usr/bin/chromedriver
+2024-10-03 12:42:38 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-10-03 12:42:38 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-10-03 12:42:38 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-10-03 12:42:38 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-10-03 12:42:38 [DEBUG] Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2024-10-03 12:42:38 [DEBUG] Required driver: chromedriver 129.0.6668.89
+2024-10-03 12:42:38 [DEBUG] Driver path: /usr/bin/chromedriver
+2024-10-03 12:42:38 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-10-03 12:42:38 [DEBUG] Started executable: `/usr/bin/chromedriver` in a child process with pid: 2309 using 0 to output -3
+2024-10-03 12:42:38 [DEBUG] POST http://localhost:45153/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-10-03 12:42:38 [DEBUG] Starting new HTTP connection (1): localhost:45153
+2024-10-03 12:42:39 [DEBUG] http://localhost:45153 "POST /session HTTP/11" 200 0
+2024-10-03 12:42:39 [DEBUG] Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.58","chrome":{"chromedriverVersion":"129.0.6668.58 (81a06fb873a9b386848719cf9f93e59579fb5d4b-refs/branch-heads/6668@{#1318})","userDataDir":"/tmp/.org.chromium.Chromium.CSZDeY"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:34479"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"9126ef66af2a4f9d661f0b5e994971b0"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-03 12:42:39 [DEBUG] Finished Request
+2024-10-03 12:42:39 [DEBUG] POST http://localhost:45153/session/9126ef66af2a4f9d661f0b5e994971b0/timeouts {'implicit': 10000}
+2024-10-03 12:42:39 [DEBUG] http://localhost:45153 "POST /session/9126ef66af2a4f9d661f0b5e994971b0/timeouts HTTP/11" 200 0
+2024-10-03 12:42:39 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-03 12:42:39 [DEBUG] Finished Request
+2024-10-03 12:42:39 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:42:40 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "POST /api/create HTTP/11" 200 3
+2024-10-03 12:42:40 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:42:40 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/get/192 HTTP/11" 200 152
+2024-10-03 12:42:40 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:42:40 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/get/192 HTTP/11" 200 152
+2024-10-03 12:42:40 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:42:41 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "DELETE /api/delete/192 HTTP/11" 204 0
+2024-10-03 12:42:41 [DEBUG] DELETE http://localhost:45153/session/9126ef66af2a4f9d661f0b5e994971b0 {}
+2024-10-03 12:42:41 [DEBUG] http://localhost:45153 "DELETE /session/9126ef66af2a4f9d661f0b5e994971b0 HTTP/11" 200 0
+2024-10-03 12:42:41 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-03 12:42:41 [DEBUG] Finished Request

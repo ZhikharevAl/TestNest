@@ -1,0 +1,15 @@
+{
+    "id": 199,
+    "title": "Take.",
+    "verified": false,
+    "addition": {
+        "id": 199,
+        "additional_info": "Central about front analysis.",
+        "additional_number": 513
+    },
+    "important_numbers": [
+        31,
+        70,
+        3
+    ]
+}
