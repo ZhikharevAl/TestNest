@@ -1,0 +1,15 @@
+{
+    "id": 168,
+    "title": "Doctor store.",
+    "verified": false,
+    "addition": {
+        "id": 168,
+        "additional_info": "Before.",
+        "additional_number": 119
+    },
+    "important_numbers": [
+        16,
+        34,
+        52
+    ]
+}

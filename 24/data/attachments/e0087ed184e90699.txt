@@ -1,0 +1,15 @@
+{
+    "id": 167,
+    "title": "Choice thing.",
+    "verified": true,
+    "addition": {
+        "id": 167,
+        "additional_info": "Generation son century act.",
+        "additional_number": 803
+    },
+    "important_numbers": [
+        98,
+        78,
+        11
+    ]
+}

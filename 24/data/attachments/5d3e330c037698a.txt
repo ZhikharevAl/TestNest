@@ -1,0 +1,15 @@
+{
+    "id": 162,
+    "title": "Product doctor.",
+    "verified": true,
+    "addition": {
+        "id": 162,
+        "additional_info": "Simply author catch.",
+        "additional_number": 155
+    },
+    "important_numbers": [
+        12,
+        64,
+        77
+    ]
+}

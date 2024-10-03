@@ -1,0 +1,15 @@
+{
+    "id": 164,
+    "title": "Worker.",
+    "verified": true,
+    "addition": {
+        "id": 164,
+        "additional_info": "Of wrong.",
+        "additional_number": 946
+    },
+    "important_numbers": [
+        91,
+        32,
+        78
+    ]
+}

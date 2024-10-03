@@ -1,0 +1,15 @@
+{
+    "id": 167,
+    "title": "Different.",
+    "verified": true,
+    "addition": {
+        "id": 167,
+        "additional_info": "Shoulder nature.",
+        "additional_number": 842
+    },
+    "important_numbers": [
+        32,
+        86,
+        81
+    ]
+}

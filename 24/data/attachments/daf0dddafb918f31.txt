@@ -1,0 +1,15 @@
+{
+    "id": 165,
+    "title": "Offer.",
+    "verified": true,
+    "addition": {
+        "id": 165,
+        "additional_info": "Movement.",
+        "additional_number": 686
+    },
+    "important_numbers": [
+        39,
+        9,
+        35
+    ]
+}
