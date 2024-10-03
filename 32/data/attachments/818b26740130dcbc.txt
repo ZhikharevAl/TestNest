@@ -1,0 +1,45 @@
+2024-10-03 12:46:16 [DEBUG] Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+2024-10-03 12:46:16 [DEBUG] Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+2024-10-03 12:46:16 [DEBUG] Found chromedriver 129.0.6668.58 in PATH: /usr/bin/chromedriver
+2024-10-03 12:46:16 [DEBUG] chrome detected at /usr/bin/google-chrome
+2024-10-03 12:46:16 [DEBUG] Running command: /usr/bin/google-chrome --version
+2024-10-03 12:46:16 [DEBUG] Output: "Google Chrome 129.0.6668.58 "
+2024-10-03 12:46:16 [DEBUG] Detected browser: chrome 129.0.6668.58
+2024-10-03 12:46:16 [DEBUG] Required driver: chromedriver 129.0.6668.89
+2024-10-03 12:46:16 [DEBUG] Driver path: /usr/bin/chromedriver
+2024-10-03 12:46:16 [DEBUG] Browser path: /usr/bin/google-chrome
+2024-10-03 12:46:16 [DEBUG] Started executable: `/usr/bin/chromedriver` in a child process with pid: 2863 using 0 to output -3
+2024-10-03 12:46:16 [DEBUG] POST http://localhost:49457/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+2024-10-03 12:46:16 [DEBUG] Starting new HTTP connection (1): localhost:49457
+2024-10-03 12:46:17 [DEBUG] http://localhost:49457 "POST /session HTTP/11" 200 0
+2024-10-03 12:46:17 [DEBUG] Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.58","chrome":{"chromedriverVersion":"129.0.6668.58 (81a06fb873a9b386848719cf9f93e59579fb5d4b-refs/branch-heads/6668@{#1318})","userDataDir":"/tmp/.org.chromium.Chromium.Fd4ri6"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:42055"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"86137100fcb9151c312e196a36904f98"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-03 12:46:17 [DEBUG] Finished Request
+2024-10-03 12:46:17 [DEBUG] POST http://localhost:49457/session/86137100fcb9151c312e196a36904f98/timeouts {'implicit': 10000}
+2024-10-03 12:46:17 [DEBUG] http://localhost:49457 "POST /session/86137100fcb9151c312e196a36904f98/timeouts HTTP/11" 200 0
+2024-10-03 12:46:17 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-03 12:46:17 [DEBUG] Finished Request
+2024-10-03 12:46:17 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:46:17 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "POST /api/create HTTP/11" 200 3
+2024-10-03 12:46:17 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:46:17 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/get/212 HTTP/11" 200 157
+2024-10-03 12:46:17 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:46:18 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "DELETE /api/delete/212 HTTP/11" 204 0
+2024-10-03 12:46:18 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:46:18 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/get/212 HTTP/11" 500 33
+2024-10-03 12:46:18 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:46:19 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/getall/ HTTP/11" 200 4344
+2024-10-03 12:46:19 [DEBUG] Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+2024-10-03 12:46:19 [DEBUG] https://8613-95-32-53-158.ngrok-free.app:443 "DELETE /api/delete/212 HTTP/11" 500 37
+2024-10-03 12:46:19 [ERROR] Failed to delete entity 212: 500 Server Error: Internal Server Error for url: https://8613-95-32-53-158.ngrok-free.app/api/delete/212
+Traceback (most recent call last):
+  File "/home/runner/work/TestNest/TestNest/tests/api/conftest.py", line 29, in new_entity
+    entity_service.delete_entity(str(entity.id))
+  File "/home/runner/work/TestNest/TestNest/services/entity/entity_service.py", line 60, in delete_entity
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: Internal Server Error for url: https://8613-95-32-53-158.ngrok-free.app/api/delete/212
+2024-10-03 12:46:19 [DEBUG] DELETE http://localhost:49457/session/86137100fcb9151c312e196a36904f98 {}
+2024-10-03 12:46:19 [DEBUG] http://localhost:49457 "DELETE /session/86137100fcb9151c312e196a36904f98 HTTP/11" 200 0
+2024-10-03 12:46:19 [DEBUG] Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+2024-10-03 12:46:19 [DEBUG] Finished Request

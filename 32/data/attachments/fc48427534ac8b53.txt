@@ -1,0 +1,32 @@
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:101 Selenium Manager binary found at: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:114 Executing process: /opt/hostedtoolcache/Python/3.12.6/x64/lib/python3.12/site-packages/selenium/webdriver/common/linux/selenium-manager --browser chrome --debug --language-binding python --output json
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Found chromedriver 129.0.6668.58 in PATH: /usr/bin/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 chrome detected at /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Running command: /usr/bin/google-chrome --version
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Output: "Google Chrome 129.0.6668.58 "
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Detected browser: chrome 129.0.6668.58
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Required driver: chromedriver 129.0.6668.89
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Driver path: /usr/bin/chromedriver
+DEBUG    selenium.webdriver.common.selenium_manager:selenium_manager.py:140 Browser path: /usr/bin/google-chrome
+DEBUG    selenium.webdriver.common.service:service.py:219 Started executable: `/usr/bin/chromedriver` in a child process with pid: 2499 using 0 to output -3
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:46141/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'chrome', 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'goog:chromeOptions': {'extensions': [], 'binary': '/usr/bin/google-chrome', 'args': ['--headless=new', '--window-size=1920,1080']}}}}
+DEBUG    urllib3.connectionpool:connectionpool.py:243 Starting new HTTP connection (1): localhost:46141
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:46141 "POST /session HTTP/11" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"129.0.6668.58","chrome":{"chromedriverVersion":"129.0.6668.58 (81a06fb873a9b386848719cf9f93e59579fb5d4b-refs/branch-heads/6668@{#1318})","userDataDir":"/tmp/.org.chromium.Chromium.WfaAfe"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:43199"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"linux","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"6387e26d9d52261045195dbfeb536c89"}} | headers=HTTPHeaderDict({'Content-Length': '848', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 POST http://localhost:46141/session/6387e26d9d52261045195dbfeb536c89/timeouts {'implicit': 10000}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:46141 "POST /session/6387e26d9d52261045195dbfeb536c89/timeouts HTTP/11" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request
+DEBUG    urllib3.connectionpool:connectionpool.py:1051 Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+DEBUG    urllib3.connectionpool:connectionpool.py:546 https://8613-95-32-53-158.ngrok-free.app:443 "POST /api/create HTTP/11" 200 3
+DEBUG    urllib3.connectionpool:connectionpool.py:1051 Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+DEBUG    urllib3.connectionpool:connectionpool.py:546 https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/get/207 HTTP/11" 200 160
+DEBUG    urllib3.connectionpool:connectionpool.py:1051 Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+DEBUG    urllib3.connectionpool:connectionpool.py:546 https://8613-95-32-53-158.ngrok-free.app:443 "GET /api/get/207 HTTP/11" 200 160
+DEBUG    urllib3.connectionpool:connectionpool.py:1051 Starting new HTTPS connection (1): 8613-95-32-53-158.ngrok-free.app:443
+DEBUG    urllib3.connectionpool:connectionpool.py:546 https://8613-95-32-53-158.ngrok-free.app:443 "DELETE /api/delete/207 HTTP/11" 204 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:305 DELETE http://localhost:46141/session/6387e26d9d52261045195dbfeb536c89 {}
+DEBUG    urllib3.connectionpool:connectionpool.py:546 http://localhost:46141 "DELETE /session/6387e26d9d52261045195dbfeb536c89 HTTP/11" 200 0
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:334 Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+DEBUG    selenium.webdriver.remote.remote_connection:remote_connection.py:361 Finished Request

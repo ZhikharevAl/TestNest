@@ -1,0 +1,15 @@
+{
+    "id": 208,
+    "title": "Final.",
+    "verified": false,
+    "addition": {
+        "id": 208,
+        "additional_info": "Purpose school color.",
+        "additional_number": 846
+    },
+    "important_numbers": [
+        46,
+        96,
+        95
+    ]
+}
