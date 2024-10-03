@@ -1,0 +1,15 @@
+{
+    "id": 170,
+    "title": "Store.",
+    "verified": false,
+    "addition": {
+        "id": 170,
+        "additional_info": "Wide none.",
+        "additional_number": 265
+    },
+    "important_numbers": [
+        87,
+        29,
+        98
+    ]
+}
