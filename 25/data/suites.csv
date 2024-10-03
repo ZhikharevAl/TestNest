@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Sep 23 18:15:05 GMT 2024","Mon Sep 23 18:15:07 GMT 2024","1581","tests.ui","test_customer_list","TestCustomerList","","","test_sort_customers_by_first_name[ascending]","Test sorting customers by first name in the specified order."
-"passed","Mon Sep 23 18:15:05 GMT 2024","Mon Sep 23 18:15:07 GMT 2024","1861","tests.ui","test_add_customer","TestAddCustomer","","","test_add_customer","Test adding a new customer with valid data."
-"passed","Mon Sep 23 18:15:05 GMT 2024","Mon Sep 23 18:15:07 GMT 2024","1477","tests.ui","test_customer_list","TestCustomerList","","","test_sort_customers_by_first_name[descending]","Test sorting customers by first name in the specified order."
-"passed","Mon Sep 23 18:15:05 GMT 2024","Mon Sep 23 18:15:07 GMT 2024","1468","tests.ui","test_delete_customers","TestDeleteCustomer","","","test_delete_customer_with_average_name_length","Test deleting a customer with an average name length."
