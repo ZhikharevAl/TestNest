@@ -1,4 +1,5 @@
 import logging
+from typing import List
 
 import pytest
 
@@ -21,15 +22,8 @@ def entity_service(api_client: APIClient) -> EntityService:
 
 
 @pytest.fixture
-def create_entity(entity_service: EntityService) -> EntityResponse:
-    """Fixture to create a new entity and return its data without deleting."""
-    _, entity = entity_service.create_entity()
-    return entity
-
-
-@pytest.fixture
-def create_and_delete_entity(entity_service: EntityService) -> EntityResponse:
-    """Fixture to create a new entity, yield it, and then delete it."""
+def new_entity(entity_service: EntityService) -> EntityResponse:
+    """Fixture to create a new entity and return its data, deleting it after the test."""
     _, entity = entity_service.create_entity()
     yield entity
     try:
@@ -37,6 +31,22 @@ def create_and_delete_entity(entity_service: EntityService) -> EntityResponse:
     except Exception as e:
         error_message = f"Failed to delete entity {entity.id}: {e!s}"
         logging.exception(error_message)
+
+
+@pytest.fixture
+def upload_three_entities(entity_service: EntityService) -> List[EntityResponse]:
+    """Fixture to create three new entities and return their data, deleting them after the test."""
+    entities = []
+    for _ in range(3):
+        _, entity = entity_service.create_entity()
+        entities.append(entity)
+    yield entities
+    for entity in entities:
+        try:
+            entity_service.delete_entity(str(entity.id))
+        except Exception as e:
+            error_message = f"Failed to delete entity {entity.id}: {e!s}"
+            logging.exception(error_message)
 
 
 def pytest_configure() -> None:
