@@ -5,7 +5,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from config.config import BASE_URL, DEFAULT_TIMEOUT
+from config.config_ui.config import BASE_URL, DEFAULT_TIMEOUT
 
 
 class BasePage:

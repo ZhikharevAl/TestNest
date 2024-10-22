@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from config.config import ADD_CUSTOMER_URL
+from config.config_ui.config import ADD_CUSTOMER_URL
 from pages.base_page import BasePage
 
 

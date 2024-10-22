@@ -1,2 +1,2 @@
-BASE_URL = "https://8613-95-32-53-158.ngrok-free.app"  # change to your ngrok url
+BASE_URL = "https://2d58-77-45-151-104.ngrok-free.app"  # change to your ngrok url
 TIMEOUT = 10
