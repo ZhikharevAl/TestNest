@@ -32,7 +32,6 @@ TestNest/
 │   └── api/               # API тесты
 ├── utils/                 # Вспомогательные утилиты
 ├── .gitignore
-├── conftest.py            # Конфигурация PyTest
 ├── pyproject.toml         # Конфигурация Ruff
 ├── pytest.ini             # Конфигурация PyTest
 ├── README.md
