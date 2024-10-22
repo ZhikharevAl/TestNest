@@ -1,5 +1,7 @@
 
 [![Ruff Linter](https://github.com/ZhikharevAl/TestNest/actions/workflows/ruff_check.yml/badge.svg)](https://github.com/ZhikharevAl/TestNest/actions/workflows/ruff_check.yml)
+[![Run API Tests with Allure Report](https://github.com/ZhikharevAl/TestNest/actions/workflows/api-test.yml/badge.svg)](https://github.com/ZhikharevAl/TestNest/actions/workflows/api-test.yml)
+[![Run Tests and Generate Allure Report](https://github.com/ZhikharevAl/TestNest/actions/workflows/auto-test.yml/badge.svg)](https://github.com/ZhikharevAl/TestNest/actions/workflows/auto-test.yml)
 # Проект автоматизированного тестирования UI и API.
 
 ## Оглавление
