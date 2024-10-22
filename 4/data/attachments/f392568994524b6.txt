@@ -1,3 +1,0 @@
-{
-    "error": "no rows found for this id"
-}
