@@ -1,0 +1,15 @@
+{
+    "id": 18,
+    "title": "Current employee.",
+    "verified": false,
+    "addition": {
+        "id": 18,
+        "additional_info": "Finish always.",
+        "additional_number": 746
+    },
+    "important_numbers": [
+        48,
+        75,
+        29
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": 19,
+    "title": "Tonight manage.",
+    "verified": true,
+    "addition": {
+        "id": 19,
+        "additional_info": "Simply able.",
+        "additional_number": 212
+    },
+    "important_numbers": [
+        7,
+        80,
+        1
+    ]
+}
