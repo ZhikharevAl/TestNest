@@ -1,0 +1,15 @@
+{
+    "id": 8,
+    "title": "Month to.",
+    "verified": false,
+    "addition": {
+        "id": 8,
+        "additional_info": "If five.",
+        "additional_number": 157
+    },
+    "important_numbers": [
+        12,
+        5,
+        70
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": 12,
+    "title": "Federal writer.",
+    "verified": false,
+    "addition": {
+        "id": 12,
+        "additional_info": "Close dream.",
+        "additional_number": 204
+    },
+    "important_numbers": [
+        88,
+        5,
+        62
+    ]
+}
