@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 
-from config.config import CUSTOMER_LIST_URL
+from config.config_ui.config import CUSTOMER_LIST_URL
 from pages.base_page import BasePage
 from utils.ui.statistics_utils import (
     find_name_closest_to_average_length,
